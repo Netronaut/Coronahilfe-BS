@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { TinaCMS, TinaProvider } from 'tinacms';
 
 type TinaAppProps = {
-  Component: React.ReactNode;
+  Component: React.ComponentType;
   pageProps: object;
 };
 

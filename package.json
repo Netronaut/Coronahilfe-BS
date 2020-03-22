@@ -6,7 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint --ignore-path .gitignore ./{pages}/**/* --fix"
+    "lint": "eslint --ignore-path .gitignore ./{pages}/**/* --fix",
+    "analyze": "cross-env ANALYZE=true next build",
+    "analyze:server": "cross-env BUNDLE_ANALYZE=server next build",
+    "analyze:browser": "cross-env BUNDLE_ANALYZE=browser next build"
   },
   "dependencies": {
     "moment": "^2.24.0",
@@ -17,10 +20,12 @@
     "tinacms": "^0.17.0"
   },
   "devDependencies": {
+    "@next/bundle-analyzer": "^9.3.1",
     "@types/node": "^13.9.2",
     "@types/react": "^16.9.25",
     "@typescript-eslint/eslint-plugin": "^2.24.0",
     "@typescript-eslint/parser": "^2.24.0",
+    "cross-env": "^7.0.2",
     "eslint": "^6.8.0",
     "eslint-config-prettier": "^6.10.1",
     "eslint-plugin-prettier": "^3.1.2",
