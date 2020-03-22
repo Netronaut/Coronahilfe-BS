@@ -12,17 +12,15 @@
     "analyze:browser": "cross-env BUNDLE_ANALYZE=browser next build"
   },
   "dependencies": {
-    "@tinacms/api-git": "^0.7.0",
-    "@tinacms/git-client": "^0.6.1",
     "cors": "^2.8.5",
+    "date-fns": "^2.11.0",
+    "date-fns-tz": "^1.0.10",
     "express": "^4.17.1",
-    "moment": "^2.24.0",
+    "gray-matter": "^4.0.2",
     "next": "9.3.1",
-    "next-tinacms-json": "^0.3.6",
     "react": "16.13.1",
     "react-dom": "16.13.1",
-    "styled-components": "^5.0.1",
-    "tinacms": "^0.17.0"
+    "react-markdown": "^4.3.1"
   },
   "devDependencies": {
     "@next/bundle-analyzer": "^9.3.1",
