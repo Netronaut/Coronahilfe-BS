@@ -41,12 +41,20 @@ const Page: React.FC<PageProps> = ({ data, content }) => {
 export default Page;
 
 export async function getStaticPaths(): Promise<{
-  paths: string[];
+  paths: any[];
   fallback: boolean;
 }> {
   // no paths are prerendered
   // fallback false means every path is rendered as requested
-  return { paths: [], fallback: true };
+  return {
+    paths: [
+      { params: { slug: 'hilfe' } },
+      { params: { slug: 'helfer' } },
+      { params: { slug: 'über-uns' } },
+      { params: { slug: 'datenschutz' } },
+    ],
+    fallback: false,
+  };
 }
 
 type StaticProps = {
