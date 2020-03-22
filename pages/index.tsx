@@ -3,45 +3,45 @@ import Head from 'next/head';
 const Home: React.FC = () => (
   <div className="container">
     <Head>
-      <title>Create Next App</title>
+      <title>#CoronaHilfeBS</title>
       <link rel="icon" href="/favicon.ico" />
     </Head>
 
     <main>
       <h1 className="title">
-        Welcome to <a href="https://nextjs.org">Next.js!</a>
+        Willkommen bei der <span className="accent">#CoronaHilfeBS</span>
       </h1>
 
       <p className="description">
-        Get started by editing <code>pages/index.js</code>
+        Wir sind Feiwillige, die in der derzeitigen Krise helfen wollen.
       </p>
 
       <div className="grid">
-        <a href="https://nextjs.org/docs" className="card">
-          <h3>Documentation &rarr;</h3>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a href="https://nextjs.org/learn" className="card">
-          <h3>Learn &rarr;</h3>
-          <p>Learn about Next.js in an interactive course with quizzes!</p>
-        </a>
-
-        <a
-          href="https://github.com/zeit/next.js/tree/master/examples"
-          className="card"
-        >
-          <h3>Examples &rarr;</h3>
-          <p>Discover and deploy boilerplate example Next.js projects.</p>
-        </a>
-
-        <a
-          href="https://zeit.co/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          className="card"
-        >
-          <h3>Deploy &rarr;</h3>
+        <a href="/hilfe" className="card">
+          <h3>Hilfe gesucht? &rarr;</h3>
           <p>
-            Instantly deploy your Next.js site to a public URL with ZEIT Now.
+            Schreibe uns dein Anliegen, wir finden den passenden Helfer für
+            dich.
+          </p>
+        </a>
+
+        <a href="/helfer" className="card">
+          <h3>Helfer werden &rarr;</h3>
+          <p>
+            Hilf mit, Ältere und Angehörige von Risikogruppen jetzt aktiv zu
+            unterstützen.
+          </p>
+        </a>
+
+        <a href="/über-uns" className="card">
+          <h3>Wer sind wir? &rarr;</h3>
+          <p>Finde heraus, wer wir sind und warum wir uns engagieren.</p>
+        </a>
+
+        <a href="/datenschutz" className="card">
+          <h3>Datenschutz &rarr;</h3>
+          <p>
+            Uns liegt der Schutz deiner Daten am Herzen. Lies hier mehr darüber.
           </p>
         </a>
       </div>
@@ -58,15 +58,6 @@ const Home: React.FC = () => (
     </footer>
 
     <style jsx>{`
-      .container {
-        min-height: 100vh;
-        padding: 0 0.5rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      }
-
       main {
         padding: 5rem 0;
         flex: 1;
@@ -111,20 +102,9 @@ const Home: React.FC = () => (
         text-decoration: underline;
       }
 
-      .title {
-        margin: 0;
-        line-height: 1.15;
-        font-size: 4rem;
-      }
-
       .title,
       .description {
         text-align: center;
-      }
-
-      .description {
-        line-height: 1.5;
-        font-size: 1.5rem;
       }
 
       code {
@@ -181,20 +161,6 @@ const Home: React.FC = () => (
           width: 100%;
           flex-direction: column;
         }
-      }
-    `}</style>
-
-    <style jsx global>{`
-      html,
-      body {
-        padding: 0;
-        margin: 0;
-        font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-          Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-      }
-
-      * {
-        box-sizing: border-box;
       }
     `}</style>
   </div>

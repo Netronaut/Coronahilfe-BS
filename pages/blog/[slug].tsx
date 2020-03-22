@@ -7,11 +7,11 @@ import { promises } from 'fs';
 import { Post, PostData } from '../../components/post';
 import PublishInfo from '../../components/PublishInfo';
 
-type PageProps = {
+type BlogPageProps = {
   post: Post;
 };
 
-const Page: React.FC<PageProps> = ({ post }) => {
+const BlogPage: React.FC<BlogPageProps> = ({ post }) => {
   const router = useRouter();
 
   if (router.isFallback) {
@@ -27,7 +27,7 @@ const Page: React.FC<PageProps> = ({ post }) => {
   return (
     <article>
       <header>
-        <h1>{title}</h1>
+        <h1 className="title">{title}</h1>
         <PublishInfo {...{ author, publishDate }} />
       </header>
       <main>
@@ -37,7 +37,7 @@ const Page: React.FC<PageProps> = ({ post }) => {
   );
 };
 
-export default Page;
+export default BlogPage;
 
 export async function getStaticPaths(): Promise<{
   paths: string[];

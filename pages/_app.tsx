@@ -1,3 +1,5 @@
+import '../style.css';
+
 type AppProps = {
   Component: React.ComponentType;
   pageProps: object;
