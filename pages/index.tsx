@@ -3,13 +3,13 @@ import Head from 'next/head';
 const Home: React.FC = () => (
   <div className="container">
     <Head>
-      <title>#CoronaHilfeBS</title>
+      <title>#EinkaufshilfeBS</title>
       <link rel="icon" href="/favicon.ico" />
     </Head>
 
     <main>
       <h1 className="title">
-        Willkommen bei der <span className="accent">#CoronaHilfeBS</span>
+        Willkommen bei der <span className="accent">#EinkaufshilfeBS</span>
       </h1>
 
       <p className="description">
@@ -46,16 +46,6 @@ const Home: React.FC = () => (
         </a>
       </div>
     </main>
-
-    <footer>
-      <a
-        href="https://zeit.co?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Powered by <img src="/zeit.svg" alt="ZEIT Logo" />
-      </a>
-    </footer>
 
     <style jsx>{`
       main {

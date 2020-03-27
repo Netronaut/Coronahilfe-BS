@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "cross-env NODE_ENV=production node server.js",
-    "lint": "eslint --ignore-path .gitignore ./{pages}/**/* --fix",
+    "lint": "eslint --ignore-path .gitignore './pages/**/*'",
     "analyze": "cross-env ANALYZE=true next build",
     "analyze:server": "cross-env BUNDLE_ANALYZE=server next build",
     "analyze:browser": "cross-env BUNDLE_ANALYZE=browser next build"
