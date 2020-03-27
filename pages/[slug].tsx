@@ -3,6 +3,7 @@ import { useRouter } from 'next/router';
 import ReactMarkdown from 'react-markdown';
 import matter from 'gray-matter';
 import { promises } from 'fs';
+import { Navi } from '../components/Navi';
 
 type PageProps = {
   content: string;
@@ -26,27 +27,38 @@ const Page: React.FC<PageProps> = ({ data, content }) => {
   const { title, description } = data;
 
   return (
-    <article className="container">
-      <header>
-        <h1 className="title">{title}</h1>
-        <p className="description">{description}</p>
-      </header>
-      <main>
-        <ReactMarkdown source={content} />
-      </main>
-    </article>
+    <>
+      <Navi />
+      <article className="container">
+        <header>
+          <h1 className="title">{title}</h1>
+          <p className="description">{description}</p>
+        </header>
+        <main>
+          <ReactMarkdown source={content} />
+        </main>
+      </article>
+    </>
   );
 };
 
 export default Page;
 
 export async function getStaticPaths(): Promise<{
-  paths: string[];
+  paths: object[];
   fallback: boolean;
 }> {
   // no paths are prerendered
   // fallback false means every path is rendered as requested
-  return { paths: [], fallback: true };
+  return {
+    paths: [
+      { params: { slug: 'datenschutz' } },
+      { params: { slug: 'helfer' } },
+      { params: { slug: 'hilfe' } },
+      { params: { slug: 'über-uns' } },
+    ],
+    fallback: true,
+  };
 }
 
 type StaticProps = {
