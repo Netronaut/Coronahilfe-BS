@@ -5,6 +5,10 @@ description: Collection of useful links for tackling the Corona crisis
 
 # Useful links
 
+## Hackathon #WirVsVirus
+
+![Hackathon #WirVsVirus](resources/wirvsvirus.png)
+
 ## Infection Contact Tackling
 
 ![CoChain](resources/cochain.png)
