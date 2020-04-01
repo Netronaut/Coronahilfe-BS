@@ -9,6 +9,8 @@ description: Collection of useful links for tackling the Corona crisis
 
 ![Hackathon #WirVsVirus](resources/wirvsvirus.png)
 
+https://wirvsvirushackathon.devpost.com/submissions
+
 ## Infection Contact Tackling
 
 ![CoChain](resources/cochain.png)
