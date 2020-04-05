@@ -1,15 +1,16 @@
 import Head from 'next/head';
+import { theme } from '../theme';
 
 const Home: React.FC = () => (
   <div className="container">
     <Head>
-      <title>#CoronaHilfeBS</title>
+      <title>#EinkaufshilfeBS</title>
       <link rel="icon" href="/favicon.ico" />
     </Head>
 
     <main>
       <h1 className="title">
-        Willkommen bei der <span className="accent">#CoronaHilfeBS</span>
+        Willkommen bei der <span className="accent">#Einkaufshilfe-BS</span>
       </h1>
 
       <p className="description">
@@ -46,16 +47,6 @@ const Home: React.FC = () => (
         </a>
       </div>
     </main>
-
-    <footer>
-      <a
-        href="https://zeit.co?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Powered by <img src="/zeit.svg" alt="ZEIT Logo" />
-      </a>
-    </footer>
 
     <style jsx>{`
       main {
@@ -160,6 +151,49 @@ const Home: React.FC = () => (
         .grid {
           width: 100%;
           flex-direction: column;
+        }
+      }
+    `}</style>
+    <style global jsx>{`
+      html,
+      body {
+        padding: 0;
+        margin: 0;
+        font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+          Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      .accent {
+        color: ${theme.colors.accent};
+      }
+
+      .container {
+        min-height: 100vh;
+        padding: 0 0.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .title {
+        margin: 0;
+        line-height: 1.15;
+        font-size: 4rem;
+      }
+
+      .description {
+        line-height: 1.5;
+        font-size: 1.5rem;
+      }
+
+      @media (max-width: 375px) {
+        .title {
+          font-size: 2.4rem;
         }
       }
     `}</style>
