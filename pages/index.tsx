@@ -34,7 +34,7 @@ const Home: React.FC = () => (
           </p>
         </a>
 
-        <a href="/über-uns" className="card">
+        <a href="/ueber-uns" className="card">
           <h3>Wer sind wir? &rarr;</h3>
           <p>Finde heraus, wer wir sind und warum wir uns engagieren.</p>
         </a>
