@@ -15,7 +15,6 @@ export const Badge: React.FC<BadgeProps> = ({ children, className }) => (
       border-radius: 0.5em;
       border: 4px solid ${theme.colors.darkblue};
       color: ${theme.colors.darkblue};
-      font-weight: 200;
       line-height: 1;
       align-self: center;
     `}</style>

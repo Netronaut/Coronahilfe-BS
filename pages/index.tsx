@@ -24,7 +24,7 @@ const Home: React.FC = () => (
           </h1>
         </Badge>
 
-        <p className="red uppercase center">
+        <p className="red fat uppercase center">
           Wenn sie wegen der aktuellen Situation besorgt sind einkaufen zu
           gehen, möchten wir ihnen unsere Unterstützung anbieten!
         </p>
@@ -66,9 +66,9 @@ const Home: React.FC = () => (
 
       <Badge className="center-text margin-top">
         <div className="sparse">
-          <span className="red uppercase">Melden sie sich unter</span>
+          <span className="red fat uppercase">Melden sie sich unter</span>
           <br />
-          <span className="fat">0531 1805 9703</span>
+          <span className="thin">0531 1805 9703</span>
         </div>
       </Badge>
     </main>
@@ -132,18 +132,6 @@ const Home: React.FC = () => (
 
       h1 {
         margin: 0;
-      }
-
-      p {
-        font-size: 125%;
-        font-weight: 300;
-        line-height: 1.5;
-      }
-
-      h2,
-      .red {
-        color: ${theme.colors.red};
-        font-weight: 400;
       }
 
       ol {
@@ -211,6 +199,13 @@ const Home: React.FC = () => (
 
       body {
         color: ${theme.colors.darkblue};
+        font-weight: 300;
+        line-height: 1.5;
+      }
+
+      p,
+      li {
+        font-size: 125%;
       }
 
       * {
@@ -238,6 +233,10 @@ const Home: React.FC = () => (
         align-self: center;
         justify-self: center;
         width: auto;
+      }
+
+      .red {
+        color: ${theme.colors.red};
       }
 
       .thin {
