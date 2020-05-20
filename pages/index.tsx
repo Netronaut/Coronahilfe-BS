@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import { theme } from '../theme';
 import { Badge } from '../components/Badge';
+import { Video } from '../components/Video';
 
 const Home: React.FC = () => (
   <>
@@ -43,6 +44,8 @@ const Home: React.FC = () => (
           <span className="red fat">0531 1805 9703</span>
         </p>
       </section>
+
+      <Video src="https://www.youtube-nocookie.com/embed/g1fbdiMEt1I" />
 
       <section className="column">
         <h2>Wir helfen gerne</h2>
@@ -173,8 +176,7 @@ const Home: React.FC = () => (
 
       section.cols-2 {
         background-image: url(data:image/svg+xml;utf8,%3Csvg%20height%3D%22100%22%20width%3D%224%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20height%3D%22100%22%20width%3D%224%22%20y%3D%220%22%20x%3D%220%22%20stroke-width%3D%220%22%20fill%3D%22%23545d8e%22%2F%3E%0A%3C%2Fsvg%3E);
-        background-repeat-x: no-repeat;
-        background-repeat-y: repeat;
+        background-repeat: repeat-y;
         background-position-x: center;
 
         padding: 1em 0;

@@ -1,7 +1,7 @@
 {
   "routes": [
     {
-      "src": "/*",
+      "src": "/",
       "status": 307,
       "dest": "https://www.sandkasten.tu-braunschweig.de/projekte/coronavirus-einkaufshilfe-fuer-aeltere-gefaehrdete"
     }
