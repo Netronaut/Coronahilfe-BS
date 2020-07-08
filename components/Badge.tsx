@@ -1,5 +1,6 @@
+import React from 'react';
 import clsx from 'classnames';
-import { theme } from '../theme';
+import { theme } from './theme';
 
 type BadgeProps = {
   className?: string;

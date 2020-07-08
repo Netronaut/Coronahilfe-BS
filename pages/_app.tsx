@@ -1,3 +1,5 @@
+import React from 'react';
+
 type AppProps = {
   Component: React.ComponentType;
   pageProps: object;

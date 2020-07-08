@@ -1,3 +1,4 @@
+import React from 'react';
 import Error from 'next/error';
 import { useRouter } from 'next/router';
 import ReactMarkdown from 'react-markdown';
@@ -61,6 +62,12 @@ export async function getStaticPaths(): Promise<{
   };
 }
 
+type PageParams = {
+  params: {
+    slug: string;
+  };
+};
+
 type StaticProps = {
   props: {
     content?: string;
@@ -68,7 +75,9 @@ type StaticProps = {
   };
 };
 
-export async function getStaticProps({ params }): Promise<StaticProps> {
+export async function getStaticProps({
+  params,
+}: PageParams): Promise<StaticProps> {
   try {
     const { content, data } = matter(
       await promises.readFile(`content/${params.slug}.md`, 'utf8'),

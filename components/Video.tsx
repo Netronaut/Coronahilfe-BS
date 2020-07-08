@@ -1,3 +1,5 @@
+import React from 'react';
+
 type VideoProps = {
   src: string;
   className?: string;

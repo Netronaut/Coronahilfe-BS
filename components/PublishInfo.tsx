@@ -1,8 +1,9 @@
+import React from 'react';
 import { format, utcToZonedTime } from 'date-fns-tz';
 import locale from 'date-fns/locale/de';
 
 const timeZone = 'Europe/Berlin';
-const formatPublishDate = isoDate =>
+const formatPublishDate = (isoDate: string): string =>
   format(utcToZonedTime(isoDate, timeZone), 'PPPp', { timeZone, locale });
 
 type PublishInfoProps = {

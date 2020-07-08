@@ -1,5 +1,6 @@
+import React from 'react';
 import Head from 'next/head';
-import { theme } from '../theme';
+import { theme } from '../components/theme';
 import { Badge } from '../components/Badge';
 import { Video } from '../components/Video';
 
