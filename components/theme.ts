@@ -1,9 +1,17 @@
 export const theme = {
   colors: {
-    accent: '#0070f3',
-    creamwhite: '#fefefe',
-    lightblue: '#d7ebf0',
-    darkblue: '#545d8e',
-    red: '#e16c66',
+    blue: '#545D8E',
+    lightblue: '#0070F3',
+    bluewhite: '#D7EBF0',
+    creamwhite: '#FEFEFE',
+    red: '#E16C66',
+  },
+  font: {
+    family: 'Roboto',
+    condensed: 'Roboto Condensed',
+    black: 900,
+    bold: 700,
+    medium: 500,
+    regular: 400,
   },
 };
