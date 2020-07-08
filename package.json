@@ -14,29 +14,28 @@
   "dependencies": {
     "classnames": "^2.2.6",
     "cors": "^2.8.5",
-    "date-fns": "^2.11.0",
+    "date-fns": "^2.14.0",
     "date-fns-tz": "^1.0.10",
-    "express": "^4.17.1",
     "gray-matter": "^4.0.2",
-    "next": "9.3.1",
+    "next": "^9.4.4",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-markdown": "^4.3.1"
   },
   "devDependencies": {
-    "@next/bundle-analyzer": "^9.3.1",
-    "@types/node": "^13.9.2",
-    "@types/react": "^16.9.25",
-    "@typescript-eslint/eslint-plugin": "^2.24.0",
-    "@typescript-eslint/parser": "^2.24.0",
+    "@next/bundle-analyzer": "^9.4.4",
+    "@types/node": "^13.13.13",
+    "@types/react": "^16.9.41",
+    "@typescript-eslint/eslint-plugin": "^2.34.0",
+    "@typescript-eslint/parser": "^2.34.0",
     "cross-env": "^7.0.2",
     "eslint": "^6.8.0",
-    "eslint-config-prettier": "^6.10.1",
-    "eslint-plugin-prettier": "^3.1.2",
-    "eslint-plugin-react": "^7.19.0",
-    "husky": "^4.2.3",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-react": "^7.20.3",
+    "husky": "^4.2.5",
     "prettier": "^1.19.1",
-    "typescript": "^3.8.3"
+    "typescript": "^3.9.6"
   },
   "husky": {
     "hooks": {
