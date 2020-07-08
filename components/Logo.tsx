@@ -6,7 +6,7 @@ const FirstLine = styled(Headline)`
   letter-spacing: 0.8px;
 `;
 
-const LogoUnstyled: React.FC<{ className: string }> = ({ className }) => (
+const LogoUnstyled: React.FC<{ className?: string }> = ({ className }) => (
   <h1 className={className}>
     <FirstLine>Studentische</FirstLine>
     <Headline>Einkaufshilfe</Headline>

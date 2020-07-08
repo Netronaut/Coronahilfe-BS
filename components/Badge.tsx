@@ -1,23 +1,23 @@
 import React from 'react';
-import clsx from 'classnames';
-import { theme } from './theme';
+import styled from 'styled-components';
+import { Telephone } from './Icons';
+import { Splash } from './Typography';
 
-type BadgeProps = {
-  className?: string;
-};
-
-export const Badge: React.FC<BadgeProps> = ({ children, className }) => (
-  <div className={clsx(className)}>
-    {children}
-    <style jsx>{`
-      background-color: ${theme.colors.creamwhite};
-      padding: 0.5em;
-      font-size: 250%;
-      border-radius: 0.5em;
-      border: 4px solid ${theme.colors.darkblue};
-      color: ${theme.colors.darkblue};
-      line-height: 1;
-      align-self: center;
-    `}</style>
+export const UnstyledBadge: React.FC<{ className: string }> = ({
+  className,
+}) => (
+  <div className={className}>
+    <Telephone size={108} />
+    <Splash>0531 1805 9703</Splash>
   </div>
 );
+
+export const Badge = styled(UnstyledBadge)`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  > :last-child {
+    margin-left: 1rem;
+  }
+`;

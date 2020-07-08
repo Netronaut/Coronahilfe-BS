@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="214px" height="260px" viewBox="0 0 214 260" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="320px" height="320px" viewBox="0 0 320 320" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <title>grocery</title>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="grocery">
+        <g id="grocery" transform="translate(53.000000, 16.000000)">
             <path d="M147.037548,204.281509 L75.4443247,204.281509 L75.4443247,59.380566 C75.4443247,39.6132075 91.4689601,23.5888679 111.23971,23.5888679 C131.01046,23.5888679 147.037548,39.6132075 147.037548,59.380566 L147.037548,204.281509" id="Fill-37" fill="#9BCFDA"></path>
             <polygon id="Fill-38" fill="#9BCFDA" points="98.8336196 47.0281132 123.648253 47.0281132 123.648253 13.4292453 98.8336196 13.4292453"></polygon>
             <path d="M124.062853,13.4292453 L98.4190202,13.4292453 C94.7097047,13.4292453 91.702019,10.4245283 91.702019,6.71584906 C91.702019,3.00716981 94.7097047,0 98.4190202,0 L124.062853,0 C127.769715,0 130.777401,3.00716981 130.777401,6.71584906 C130.777401,10.4245283 127.769715,13.4292453 124.062853,13.4292453" id="Fill-39" fill="#505A8D"></path>

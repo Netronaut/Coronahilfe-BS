@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="175px" height="260px" viewBox="0 0 175 260" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="320px" height="320px" viewBox="0 0 320 320" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <title>poi</title>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="poi">
+        <g id="poi" transform="translate(72.000000, 30.000000)">
             <path d="M175,87.7643767 C175,136.232372 87.4975498,260 87.4975498,260 C87.4975498,260 0,136.232372 0,87.7643767 C0,39.2963817 39.174204,0 87.4975498,0 C135.825796,0 175,39.2963817 175,87.7643767" id="Fill-81" fill="#505A8D"></path>
             <path d="M124.193548,79.1304348 C124.193548,99.4208445 107.769996,115.869565 87.5,115.869565 C67.2347645,115.869565 50.8064516,99.4208445 50.8064516,79.1304348 C50.8064516,58.840025 67.2347645,42.3913043 87.5,42.3913043 C107.769996,42.3913043 124.193548,58.840025 124.193548,79.1304348" id="Fill-82" fill="#FFFFFF"></path>
         </g>

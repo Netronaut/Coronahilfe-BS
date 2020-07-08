@@ -5,16 +5,14 @@ const Image = styled.img`
   object-fit: contain;
 `;
 
-type IconProps = {
-  width?: string;
-  height?: string;
+export type IconProps = {
+  size?: number;
 };
 
-const Icon: React.FC<IconProps & ImgHTMLAttributes<HTMLImageElement>> = ({
-  width,
-  height,
-  ...props
-}) => <Image style={{ width, height }} {...props} />;
+export const Icon: React.FC<IconProps &
+  ImgHTMLAttributes<HTMLImageElement>> = ({ size, ...props }) => (
+  <Image style={{ width: `${size}px`, height: `${size}px` }} {...props} />
+);
 
 export const Cart: React.FC<IconProps> = props => (
   <Icon src="icons/cart.svg" alt="cart" {...props} />
