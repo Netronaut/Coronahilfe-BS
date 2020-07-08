@@ -13,5 +13,14 @@ export const theme = {
     bold: 700,
     medium: 500,
     regular: 400,
+    size: {
+      xxs: '14px',
+      xs: '18px',
+      s: '24px',
+      m: '28px',
+      l: '44px',
+      xl: '51px',
+      xxl: '70px',
+    },
   },
 };

@@ -9,6 +9,7 @@ import {
   Navigation,
   NavigationMedium,
   Splash,
+  LogoLower,
 } from '../Typography';
 import styled from 'styled-components';
 
@@ -37,5 +38,6 @@ export const Typography = () => (
       NavigationMedium &mdash; Roboto Medium 18
     </NavigationMedium>
     <Splash>Splash &mdash; Roboto-Condensed Regular 44</Splash>
+    <LogoLower>LogoLower &mdash; Roboto Regular 51</LogoLower>
   </FontList>
 );
