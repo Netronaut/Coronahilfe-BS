@@ -1,8 +1,9 @@
 import React from 'react';
 import Head from 'next/head';
+import { Badge, Video } from '../components';
+
+import { styles } from '../components/styles';
 import { theme } from '../components/theme';
-import { Badge } from '../components/Badge';
-import { Video } from '../components/Video';
 
 const Home: React.FC = () => (
   <>
@@ -13,17 +14,7 @@ const Home: React.FC = () => (
       </Head>
 
       <section className="row">
-        <Badge>
-          <h1>
-            <span className="red fat">
-              Studentische
-              <br />
-              Einkaufshilfe
-            </span>
-            <br />
-            <span className="thin">Braunschweig</span>
-          </h1>
-        </Badge>
+        <Badge />
 
         <p className="red fat uppercase center">
           Wenn sie wegen der aktuellen Situation besorgt sind einkaufen zu
@@ -189,109 +180,7 @@ const Home: React.FC = () => (
         line-height: 0.5;
       }
     `}</style>
-    <style global jsx>{`
-      html,
-      body {
-        padding: 0;
-        margin: 0;
-        font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-          Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-      }
-
-      body {
-        color: ${theme.colors.darkblue};
-        font-weight: 300;
-        line-height: 1.5;
-      }
-
-      p,
-      li {
-        font-size: 125%;
-      }
-
-      * {
-        box-sizing: border-box;
-      }
-
-      .center-text {
-        text-align: center;
-      }
-
-      .right-text {
-        text-align: right;
-      }
-
-      .left-text {
-        text-align: left;
-      }
-
-      .uppercase {
-        text-transform: uppercase;
-        line-height: 1.7;
-      }
-
-      .center {
-        align-self: center;
-        justify-self: center;
-        width: auto;
-      }
-
-      .red {
-        color: ${theme.colors.red};
-      }
-
-      .thin {
-        font-weight: 200;
-      }
-
-      .fat {
-        font-weight: 700;
-      }
-
-      .medium-large {
-        font-size: 150%;
-      }
-
-      .sparse {
-        line-height: 1.5;
-      }
-
-      .margin-top {
-        margin-top: 1rem;
-      }
-
-      .nowrap {
-        white-space: nowrap;
-      }
-
-      .row {
-        display: flex;
-        flex-direction: row;
-        margin: 1em auto;
-        justify-content: space-between;
-      }
-
-      .row > * {
-        margin: 0 1rem;
-      }
-
-      .row > *:first-child {
-        margin-left: 0;
-      }
-
-      .row > *:last-child {
-        margin-right: 0;
-      }
-
-      .column {
-        flex-direction: column;
-      }
-
-      .cols-2 > * {
-        width: 50%;
-        margin: 0;
-      }
-    `}</style>
+    {styles}
   </>
 );
 

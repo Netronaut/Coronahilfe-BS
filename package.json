@@ -1,61 +1,63 @@
 {
-  "name": "coronahilfe-bs",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "cross-env NODE_ENV=production node server.js",
-    "lint": "eslint --ignore-path .gitignore './pages/**/*'",
-    "analyze": "cross-env ANALYZE=true next build",
-    "analyze:server": "cross-env BUNDLE_ANALYZE=server next build",
-    "analyze:browser": "cross-env BUNDLE_ANALYZE=browser next build",
-    "storybook": "start-storybook -p 6006 -s ./public/",
-    "build-storybook": "build-storybook"
-  },
-  "dependencies": {
-    "classnames": "^2.2.6",
-    "cors": "^2.8.5",
-    "date-fns": "^2.14.0",
-    "date-fns-tz": "^1.0.10",
-    "gray-matter": "^4.0.2",
-    "next": "^9.4.4",
-    "react": "16.13.1",
-    "react-dom": "16.13.1",
-    "react-markdown": "^4.3.1"
-  },
-  "devDependencies": {
-    "@babel/core": "^7.10.4",
-    "@babel/preset-typescript": "^7.10.4",
-    "@next/bundle-analyzer": "^9.4.4",
-    "@storybook/addon-actions": "^5.3.19",
-    "@storybook/addon-info": "^5.3.19",
-    "@storybook/addon-links": "^5.3.19",
-    "@storybook/addons": "^5.3.19",
-    "@storybook/preset-typescript": "^3.0.0",
-    "@storybook/react": "^5.3.19",
-    "@types/classnames": "^2.2.10",
-    "@types/node": "^13.13.13",
-    "@types/react": "^16.9.41",
-    "@types/styled-components": "^5.1.1",
-    "@typescript-eslint/eslint-plugin": "^2.34.0",
-    "@typescript-eslint/parser": "^2.34.0",
-    "babel-loader": "^8.1.0",
-    "babel-plugin-styled-components": "^1.10.7",
-    "cross-env": "^7.0.2",
-    "eslint": "^6.8.0",
-    "eslint-config-prettier": "^6.11.0",
-    "eslint-plugin-prettier": "^3.1.4",
-    "eslint-plugin-react": "^7.20.3",
-    "husky": "^4.2.5",
-    "prettier": "^1.19.1",
-    "react-docgen-typescript-loader": "^3.7.2",
-    "styled-components": "^5.1.1",
-    "typescript": "^3.9.6"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run lint"
+    "name": "coronahilfe-bs",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "cross-env NODE_ENV=production node server.js",
+        "lint": "eslint --ignore-path .gitignore './pages/**/*'",
+        "analyze": "cross-env ANALYZE=true next build",
+        "analyze:server": "cross-env BUNDLE_ANALYZE=server next build",
+        "analyze:browser": "cross-env BUNDLE_ANALYZE=browser next build",
+        "storybook": "start-storybook -p 6006 --ci -s ./public/",
+        "build-storybook": "build-storybook"
+    },
+    "dependencies": {
+        "13": "0.0.0",
+        "classnames": "^2.2.6",
+        "cors": "^2.8.5",
+        "date-fns": "^2.15.0",
+        "date-fns-tz": "^1.0.10",
+        "gray-matter": "^4.0.2",
+        "next": "^9.5.1",
+        "react": "16.13.1",
+        "react-dom": "16.13.1",
+        "react-markdown": "^4.3.1",
+        "styled-components": "^5.1.1"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.10.4",
+        "@babel/preset-typescript": "^7.10.4",
+        "@next/bundle-analyzer": "^9.4.4",
+        "@storybook/addon-actions": "^5.3.19",
+        "@storybook/addon-info": "^5.3.19",
+        "@storybook/addon-links": "^5.3.19",
+        "@storybook/addons": "^5.3.19",
+        "@storybook/preset-typescript": "^3.0.0",
+        "@storybook/react": "^5.3.19",
+        "@types/classnames": "^2.2.10",
+        "@types/node": "^13.13.13",
+        "@types/react": "^16.9.41",
+        "@types/styled-components": "^5.1.1",
+        "@typescript-eslint/eslint-plugin": "^2.34.0",
+        "@typescript-eslint/parser": "^2.34.0",
+        "babel-loader": "^8.1.0",
+        "babel-plugin-styled-components": "^1.10.7",
+        "cross-env": "^7.0.2",
+        "eslint": "^6.8.0",
+        "eslint-config-prettier": "^6.11.0",
+        "eslint-plugin-prettier": "^3.1.4",
+        "eslint-plugin-react": "^7.20.3",
+        "husky": "^4.2.5",
+        "prettier": "^1.19.1",
+        "react-docgen-typescript-loader": "^3.7.2",
+        "styled-components": "^5.1.1",
+        "typescript": "^3.9.6"
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "npm run lint"
+        }
     }
-  }
 }

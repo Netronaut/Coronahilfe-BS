@@ -3,8 +3,8 @@ import Link from 'next/link';
 import { theme } from './theme';
 import { HomeLogo } from './HomeLogo';
 
-export const Navi = () => (
-  <nav className="navi">
+export const Navigation = () => (
+  <nav className="navigation">
     <Link href="/">
       <a className="home">
         <HomeLogo />
@@ -21,7 +21,7 @@ export const Navi = () => (
     </Link>
 
     <style jsx>{`
-      .navi {
+      .navigation {
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -44,9 +44,9 @@ export const Navi = () => (
         background-color: transparent;
       }
 
-      .navi a:hover {
+      .navigation a:hover {
         color: white;
-        background-color: ${theme.colors.accent};
+        background-color: ${theme.colors.lightblue};
       }
     `}</style>
     <style global jsx>{`
