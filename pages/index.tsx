@@ -2,7 +2,6 @@ import React from 'react';
 import Head from 'next/head';
 import { Badge, Video } from '../components';
 
-import { styles } from '../components/styles';
 import { theme } from '../components/theme';
 
 const Home: React.FC = () => (
@@ -180,7 +179,6 @@ const Home: React.FC = () => (
         line-height: 0.5;
       }
     `}</style>
-    {styles}
   </>
 );
 

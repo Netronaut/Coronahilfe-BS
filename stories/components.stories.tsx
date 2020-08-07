@@ -4,7 +4,7 @@ import { Badge } from '../components';
 
 export default {
   title: 'components',
-  decorators: [storyFn => <Padding>{storyFn()}</Padding>],
+  decorators: [(storyFn: Function) => <Padding>{storyFn()}</Padding>],
 };
 
 export const badge = () => <Badge />;

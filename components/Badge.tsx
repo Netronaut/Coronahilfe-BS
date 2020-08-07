@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { Telephone } from './Icons';
 import { Splash } from './Typography';
 
-export const UnstyledBadge: React.FC<{ className: string }> = ({
+export const UnstyledBadge: React.FC<{ className?: string }> = ({
   className,
 }) => (
   <div className={className}>

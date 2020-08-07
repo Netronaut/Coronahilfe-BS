@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const Padding = ({ children }) => (
+export const Padding: React.FC = ({ children }) => (
   <div style={{ padding: '1rem' }}>
     {children}
   </div>

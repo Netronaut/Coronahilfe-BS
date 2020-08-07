@@ -1,11 +1,4 @@
-import React, {
-  ReactElement,
-  ReactNode,
-  ReactInstance,
-  ReactComponentElement,
-  ComponentElement,
-  JSXElementConstructor,
-} from 'react';
+import React, { ReactComponentElement } from 'react';
 import {
   Cart,
   TUBS,
