@@ -27,9 +27,9 @@
         "styled-components": "^5.1.1"
     },
     "devDependencies": {
-        "@babel/core": "^7.10.4",
+        "@babel/core": "^7.11.1",
         "@babel/preset-typescript": "^7.10.4",
-        "@next/bundle-analyzer": "^9.4.4",
+        "@next/bundle-analyzer": "^9.5.1",
         "@storybook/addon-actions": "^5.3.19",
         "@storybook/addon-info": "^5.3.19",
         "@storybook/addon-links": "^5.3.19",
@@ -37,23 +37,23 @@
         "@storybook/preset-typescript": "^3.0.0",
         "@storybook/react": "^5.3.19",
         "@types/classnames": "^2.2.10",
-        "@types/node": "^13.13.13",
-        "@types/react": "^16.9.41",
-        "@types/styled-components": "^5.1.1",
+        "@types/node": "^13.13.15",
+        "@types/react": "^16.9.44",
+        "@types/styled-components": "^5.1.2",
         "@typescript-eslint/eslint-plugin": "^2.34.0",
         "@typescript-eslint/parser": "^2.34.0",
         "babel-loader": "^8.1.0",
-        "babel-plugin-styled-components": "^1.10.7",
+        "babel-plugin-styled-components": "^1.11.1",
         "cross-env": "^7.0.2",
         "eslint": "^6.8.0",
         "eslint-config-prettier": "^6.11.0",
         "eslint-plugin-prettier": "^3.1.4",
-        "eslint-plugin-react": "^7.20.3",
+        "eslint-plugin-react": "^7.20.5",
         "husky": "^4.2.5",
         "prettier": "^1.19.1",
         "react-docgen-typescript-loader": "^3.7.2",
         "styled-components": "^5.1.1",
-        "typescript": "^3.9.6"
+        "typescript": "^3.9.7"
     },
     "husky": {
         "hooks": {
