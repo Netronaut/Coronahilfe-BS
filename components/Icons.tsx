@@ -7,11 +7,21 @@ const Image = styled.img`
 
 export type IconProps = {
   size?: number;
+  width?: number;
+  height?: number;
 };
 
 export const Icon: React.FC<IconProps &
-  ImgHTMLAttributes<HTMLImageElement>> = ({ size, ...props }) => (
-  <Image style={{ width: `${size}px`, height: `${size}px` }} {...props} />
+  ImgHTMLAttributes<HTMLImageElement>> = ({
+  size,
+  width,
+  height,
+  ...props
+}) => (
+  <Image
+    style={{ width: `${width || size}px`, height: `${height || size}px` }}
+    {...props}
+  />
 );
 
 export const Cart: React.FC<IconProps> = props => (
@@ -39,7 +49,7 @@ export const Telephone: React.FC<IconProps> = props => (
 );
 
 export const TUBS: React.FC<IconProps> = props => (
-  <Icon src="icons/tu-bs-logo.png" alt="tu-bs-logo" {...props} />
+  <Icon src="icons/tu-bs-logo.svg" alt="tu-bs-logo" {...props} />
 );
 
 export const Sandkasten: React.FC<IconProps> = props => (

@@ -5,6 +5,7 @@ export const theme = {
     bluewhite: '#D7EBF0',
     creamwhite: '#FEFEFE',
     red: '#E16C66',
+    darkred: '#BE1E3C',
   },
   font: {
     family: 'Roboto',
@@ -21,6 +22,18 @@ export const theme = {
       l: '44px',
       xl: '51px',
       xxl: '70px',
+    },
+  },
+  grid: {
+    navigation: {
+      height: '8rem',
+      subnav: {
+        height: '6.25rem',
+      },
+    },
+    layout: {
+      left: '6rem',
+      right: '10rem',
     },
   },
 };

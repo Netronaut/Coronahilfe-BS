@@ -1,3 +1,4 @@
 export * from './Badge';
-export * from './Video';
+export * from './Logo';
 export * from './Navigation';
+export * from './Video';

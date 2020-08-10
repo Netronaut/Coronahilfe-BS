@@ -5,9 +5,8 @@ import {
   TwoLine,
   Secondary,
   Hero,
-  Meta,
   Navigation,
-  NavigationMedium,
+  NavigationSmall,
   Splash,
   LogoLower,
 } from '../components/Typography';
@@ -32,11 +31,8 @@ export const Typography = () => (
     <TwoLine>TwoLine &mdash; Roboto Bold 70</TwoLine>
     <Secondary>Secondary &mdash; Roboto Bold 28</Secondary>
     <Hero>Hero &mdash; Roboto Medium Italic 28</Hero>
-    <Meta>Meta &mdash; Roboto Regular 14</Meta>
     <Navigation>Navigation &mdash; Roboto Medium 28</Navigation>
-    <NavigationMedium>
-      NavigationMedium &mdash; Roboto Medium 18
-    </NavigationMedium>
+    <NavigationSmall>NavigationSmall &mdash; Roboto Medium 14</NavigationSmall>
     <Splash>Splash &mdash; Roboto-Condensed Regular 44</Splash>
     <LogoLower>LogoLower &mdash; Roboto Regular 51</LogoLower>
   </FontList>
