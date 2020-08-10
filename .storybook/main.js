@@ -1,8 +1,6 @@
 module.exports = {
   stories: [
-    '../components/**/*.stories.{ts,js}?',
-    '../pages/**/*.stories.{ts,js}?',
-    '../stories/**/*.stories.{ts,js}?'
+    '../stories/**/*.stories.{ts,js}?',
   ],
   addons: [
     '@storybook/preset-typescript',

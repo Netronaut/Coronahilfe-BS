@@ -10,7 +10,7 @@ import {
   Sandkasten,
   POI,
   Telephone,
-} from '../Icons';
+} from '../components/Icons';
 import styled from 'styled-components';
 
 export default {

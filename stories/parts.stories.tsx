@@ -1,6 +1,6 @@
 import React from 'react';
-import { Logo } from '../Logo';
-import { Badge } from '../Badge';
+import { Logo, Badge, Navigation } from '../components';
+import { Padding } from '../.storybook/decorators';
 
 export default {
   component: Logo,
@@ -17,4 +17,14 @@ export const BadgeStory = () => <Badge />;
 
 BadgeStory.story = {
   name: 'Badge',
+};
+
+export const NavigationStory = () => (
+  <Padding>
+    <Navigation />
+  </Padding>
+);
+
+NavigationStory.story = {
+  name: 'Navigation',
 };

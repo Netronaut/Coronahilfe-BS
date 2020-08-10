@@ -10,7 +10,7 @@ import {
   NavigationMedium,
   Splash,
   LogoLower,
-} from '../Typography';
+} from '../components/Typography';
 import styled from 'styled-components';
 
 export default {
