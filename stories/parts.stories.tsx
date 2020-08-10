@@ -1,5 +1,5 @@
 import React from 'react';
-import { Logo, Badge, Navigation, Step } from '../components';
+import { Logo, Badge, Navigation, Step, Process } from '../components';
 import { Padding } from '../.storybook/decorators';
 
 export default {
@@ -40,4 +40,14 @@ export const StepsStory = () => (
 
 StepsStory.story = {
   name: 'Steps',
+};
+
+export const ProcessStory = () => (
+  <Padding top="4rem">
+    <Process />
+  </Padding>
+);
+
+ProcessStory.story = {
+  name: 'Process',
 };

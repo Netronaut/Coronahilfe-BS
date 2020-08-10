@@ -12,7 +12,7 @@ const Container = styled.div`
     
     & >:first-child {
       width: 1em;
-      margin-right: ${theme.grid.margin.m};
+      margin-right: .4em;
     }
   `}
 `;
