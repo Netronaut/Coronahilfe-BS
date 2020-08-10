@@ -25,6 +25,9 @@ export const theme = {
     },
   },
   grid: {
+    margin: {
+      m: '.4em',
+    },
     navigation: {
       height: '8rem',
       subnav: {
@@ -34,6 +37,10 @@ export const theme = {
     layout: {
       left: '6rem',
       right: '10rem',
+    },
+    step: {
+      width: '26.25rem',
+      height: '6.25rem',
     },
   },
 };

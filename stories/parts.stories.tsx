@@ -1,5 +1,5 @@
 import React from 'react';
-import { Logo, Badge, Navigation } from '../components';
+import { Logo, Badge, Navigation, Step } from '../components';
 import { Padding } from '../.storybook/decorators';
 
 export default {
@@ -27,4 +27,17 @@ export const NavigationStory = () => (
 
 NavigationStory.story = {
   name: 'Navigation',
+};
+
+export const StepsStory = () => (
+  <>
+    <Step num={1}>Melden Sie sich bei uns unter 0531 1805 9703.</Step>
+    <Step num={2}>
+      Ein Einkaufshelfer wird Ihnen zugeteilt und meldet sich.
+    </Step>
+  </>
+);
+
+StepsStory.story = {
+  name: 'Steps',
 };
