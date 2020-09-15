@@ -8,3 +8,4 @@ export * from './Header';
 export * from './Footer';
 export * from './BannerBackground';
 export * from './SectionBreak';
+export * from './FooterBanner';

@@ -4,6 +4,7 @@ import {
   Badge,
   BannerBackground,
   Footer,
+  FooterBanner,
   Header,
   Logo,
   Navigation,
@@ -112,6 +113,7 @@ const Home: React.FC = () => (
         <Rotary />
         <Netronaut />
       </Row>
+      <FooterBanner />
     </Footer>
   </>
 );
