@@ -57,7 +57,7 @@ const Home: React.FC = () => (
       </Column>
     </Row>
 
-    <BannerBackground center>
+    <BannerBackground center src="/video-banner-background.svg">
       <Video width={915} height={514} src="https://www.youtube-nocookie.com/embed/g1fbdiMEt1I" />
     </BannerBackground>
 
@@ -76,9 +76,9 @@ const Home: React.FC = () => (
       <Step num={2}>Ein Einkaufshelfer wird Ihnen zugeteilt und meldet sich.</Step>
     </Row>
 
-    <Row indent="large">
+    <BannerBackground src="/grocery-background.png" size={400} indent="large">
       <Process />
-    </Row>
+    </BannerBackground>
 
     <Row vertical indent="large">
       <Secondary>Werde Helfer*in</Secondary>

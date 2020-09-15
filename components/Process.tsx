@@ -8,7 +8,6 @@ const Container = styled.div`
   align-items: center;
   flex-direction: column;
   position: relative;
-  margin-top: ${({ theme }): string => theme.grid.margin.xxxl};
 `;
 
 const Banner = styled.div`
@@ -25,6 +24,7 @@ const POI = styled(POIIcon)`
 const Group = styled.div`
   display: flex;
   flex-direction: column;
+  background-color: white;
 
   ${({
     theme: {

@@ -3,17 +3,19 @@ import styled from 'styled-components';
 interface IProps {
   indent?: 'small' | 'medium' | 'large';
   center?: boolean;
+  src: string;
+  size?: number;
 }
 
 export const BannerBackground = styled.div<IProps>`
   display: flex;
   flex-direction: row;
 
-  background-image: url(/video-banner-background.svg);
   background-repeat: repeat-x;
   background-position: center;
 
-  ${({ theme, indent = 'small', center = false }) => `
+  ${({ theme, indent = 'small', center = false, src, size }) => `
+    background-image: url(${src});
     justify-content: center;
     justify-content: ${center ? 'center' : 'start'};
 
@@ -26,5 +28,7 @@ export const BannerBackground = styled.div<IProps>`
           ${theme.grid.layout.bottom}
           ${theme.grid.layout.left[indent]};`
     }
+
+    ${size ? `background-size: ${size}px;` : ''}
   `}
 `;
