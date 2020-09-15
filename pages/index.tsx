@@ -57,7 +57,7 @@ const Home: React.FC = () => (
       </Column>
     </Row>
 
-    <BannerBackground indent="medium">
+    <BannerBackground center>
       <Video width={915} height={514} src="https://www.youtube-nocookie.com/embed/g1fbdiMEt1I" />
     </BannerBackground>
 

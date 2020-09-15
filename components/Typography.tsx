@@ -1,27 +1,15 @@
-import React, { useContext } from 'react';
-import styled, { ThemeContext } from 'styled-components';
+import styled from 'styled-components';
 
-type TypographyProps = {
-  theme?: Record<string, any>;
-};
-
-const withThemeContext = (Component: React.FC<TypographyProps>): React.FC<TypographyProps> => (
-  props,
-): React.ReactElement => {
-  const theme = useContext(ThemeContext);
-  return <Component {...props} theme={theme} />;
-};
-
-export const Body = withThemeContext(styled.div`
+export const Body = styled.div`
   ${(props): string => `
     color: ${props.theme.colors.blue};
     font-family: ${props.theme.font.family};
     font-weight: ${props.theme.font.regular};
     font-size: ${props.theme.font.size.s};
   `}
-`);
+`;
 
-export const Headline = withThemeContext(styled.div`
+export const Headline = styled.div`
   ${(props): string => `
     color: ${props.theme.colors.red};
     font-family: ${props.theme.font.family};
@@ -30,27 +18,27 @@ export const Headline = withThemeContext(styled.div`
   `}
   letter-spacing: 0.43px;
   text-align: justify;
-`);
+`;
 
-export const TwoLine = withThemeContext(styled.div`
+export const TwoLine = styled.div`
   ${(props): string => `
     color: ${props.theme.colors.red};
     font-family: ${props.theme.font.family};
     font-weight: ${props.theme.font.bold};
     font-size: ${props.theme.font.size.xxl};
   `}
-`);
+`;
 
-export const Secondary = withThemeContext(styled.h2`
+export const Secondary = styled.h2`
   ${(props): string => `
     color: ${props.theme.colors.red};
     font-family: ${props.theme.font.family};
     font-weight: ${props.theme.font.bold};
     font-size: ${props.theme.font.size.m};
   `}
-`);
+`;
 
-export const Hero = withThemeContext(styled.div`
+export const Hero = styled.div`
   ${(props): string => `
 color: ${props.theme.colors.red};
   font-family: ${props.theme.font.family};
@@ -58,9 +46,9 @@ color: ${props.theme.colors.red};
   font-size: ${props.theme.font.size.m};
 `}
   font-style: italic;
-`);
+`;
 
-export const Navigation = withThemeContext(styled.div`
+export const Navigation = styled.div`
   ${(props): string => `
     color: ${props.theme.colors.blue};
     font-family: ${props.theme.font.family};
@@ -76,9 +64,9 @@ export const Navigation = withThemeContext(styled.div`
       text-decoration: underline;
     }
   }
-`);
+`;
 
-export const NavigationSmall = withThemeContext(styled.div`
+export const NavigationSmall = styled.div`
   ${(props): string => `
     color: ${props.theme.colors.blue};
     font-family: ${props.theme.font.family};
@@ -94,18 +82,18 @@ export const NavigationSmall = withThemeContext(styled.div`
       text-decoration: underline;
     }
   }
-`);
+`;
 
-export const Splash = withThemeContext(styled.div`
+export const Splash = styled.div`
   ${(props): string => `
     color: ${props.theme.colors.blue};
     font-family: ${props.theme.font.condensed};
     font-weight: ${props.theme.font.regular};
     font-size: ${props.theme.font.size.l};
   `}
-`);
+`;
 
-export const LogoLower = withThemeContext(styled.div`
+export const LogoLower = styled.div`
   ${(props): string => `
     color: ${props.theme.colors.blue};
     font-family: ${props.theme.font.family};
@@ -113,4 +101,4 @@ export const LogoLower = withThemeContext(styled.div`
     font-size: ${props.theme.font.size.xl};
   `}
   letter-spacing: -0.75px;
-`);
+`;

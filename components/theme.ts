@@ -29,7 +29,8 @@ const margin = {
   m: '.5rem',
   l: '1rem',
   xl: '2rem',
-  xxl: '6.25rem',
+  xxl: '3rem',
+  xxxl: '6.25rem',
 };
 
 const grid = {
@@ -37,7 +38,7 @@ const grid = {
   navigation: {
     height: '8rem',
     subnav: {
-      height: margin.xxl,
+      height: margin.xxxl,
     },
   },
   layout: {
@@ -51,12 +52,12 @@ const grid = {
       medium: '10rem',
       large: '19rem',
     },
-    top: margin.xl,
-    bottom: margin.xl,
+    top: margin.xxl,
+    bottom: margin.xxl,
   },
   step: {
     width: '26.25rem',
-    height: margin.xxl,
+    height: margin.xxxl,
   },
   process: {
     width: '44.5rem',

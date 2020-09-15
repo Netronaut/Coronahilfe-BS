@@ -8,7 +8,7 @@ const Container = styled.div`
   align-items: center;
   flex-direction: column;
   position: relative;
-  margin-top: ${({ theme }): string => theme.grid.margin.xxl};
+  margin-top: ${({ theme }): string => theme.grid.margin.xxxl};
 `;
 
 const Banner = styled.div`
@@ -32,7 +32,7 @@ const Group = styled.div`
       grid: { margin, process },
     },
   }): string => `
-    padding: ${margin.xxl} 0;
+    padding: ${margin.xxxl} 0;
     width: ${process.width};
     border: ${process.border.width} solid ${colors.blue};
     border-radius: ${process.border.radius};
@@ -67,7 +67,7 @@ const Item = styled.div`
 `;
 
 const Dot = styled.div`
-  width: calc(${({ theme }): string => theme.grid.margin.xxl} * 2);
+  width: calc(${({ theme }): string => theme.grid.margin.xxxl} * 2);
   flex-shrink: 0;
 
   &:before {
