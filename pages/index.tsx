@@ -1,6 +1,16 @@
 import React from 'react';
 import Head from 'next/head';
-import { Badge, Footer, Header, Logo, Navigation, Process, Step, Video } from '../components';
+import {
+  Badge,
+  BannerBackground,
+  Footer,
+  Header,
+  Logo,
+  Navigation,
+  Process,
+  Step,
+  Video,
+} from '../components';
 import { Body, Hero, Secondary } from '../components/Typography';
 import { Grocery, Netronaut, Rotary, Sandkasten, TUBS } from '../components/Icons';
 import { Cell, Column, Row } from '../components/Grid';
@@ -36,7 +46,7 @@ const Home: React.FC = () => (
     </Row>
 
     <Row>
-      <Grocery size={260} />
+      <Grocery size={260} frameless />
       <Column>
         <Secondary>Wir helfen gerne</Secondary>
         <Body>
@@ -47,9 +57,9 @@ const Home: React.FC = () => (
       </Column>
     </Row>
 
-    <Row indent="medium">
+    <BannerBackground indent="medium">
       <Video width={915} height={514} src="https://www.youtube-nocookie.com/embed/g1fbdiMEt1I" />
-    </Row>
+    </BannerBackground>
 
     <Row vertical indent="large">
       <Secondary>Dabei helfen wir ihnen</Secondary>
