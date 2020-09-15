@@ -106,12 +106,20 @@ const Home: React.FC = () => (
         <Secondary>Partner &amp; Unterstützer</Secondary>
       </Row>
       <Row indent="large" center>
-        <TUBS />
-        <Sandkasten />
+        <a href="https://www.tu-braunschweig.de/">
+          <TUBS />
+        </a>
+        <a href="https://www.sandkasten.tu-braunschweig.de/">
+          <Sandkasten />
+        </a>
       </Row>
       <Row indent="large" center>
-        <Rotary />
-        <Netronaut />
+        <a href="https://braunschweig.rotary.de/">
+          <Rotary />
+        </a>
+        <a href="https://netronaut.de/">
+          <Netronaut />
+        </a>
       </Row>
       <FooterBanner />
     </Footer>
