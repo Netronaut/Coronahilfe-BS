@@ -10,9 +10,9 @@ const Container = styled.div`
   justify-content: space-between;
   white-space: nowrap;
 
-  ${({ theme }) => `
+  ${({ theme }): string => `
     height: ${theme.grid.navigation.height};
-    padding: 0 ${theme.grid.layout.right} 0 ${theme.grid.layout.left};
+    padding: 0 ${theme.grid.layout.right} 0 ${theme.grid.layout.left.small};
     background-color: ${theme.colors.bluewhite};
   `};
 `;
@@ -36,7 +36,7 @@ const PartnerLogos = styled.div`
   align-items: center;
   width: 419px;
 
-  ${({ theme }) => `
+  ${({ theme }): string => `
     height: ${theme.grid.navigation.height};
     background-color: ${theme.colors.darkred};
   `}
@@ -52,8 +52,8 @@ const SubNavigation = styled(NavigationSmall)`
   align-items: center;
   justify-content: flex-end;
 
-  ${({ theme }) => `
-    padding: 0 ${theme.grid.layout.right} 0 ${theme.grid.layout.left};
+  ${({ theme }): string => `
+    padding: 0 ${theme.grid.layout.right} 0 ${theme.grid.layout.left.small};
     height: ${theme.grid.navigation.subnav.height};
   `}
 

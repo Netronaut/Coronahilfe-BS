@@ -41,8 +41,16 @@ const grid = {
     },
   },
   layout: {
-    left: '6rem',
-    right: '10rem',
+    right: {
+      small: '10rem',
+      medium: '14rem',
+      large: '14rem',
+    },
+    left: {
+      small: '6rem',
+      medium: '10rem',
+      large: '19rem',
+    },
   },
   step: {
     width: '26.25rem',

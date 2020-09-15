@@ -24,7 +24,7 @@ const FontList = styled.section`
   }
 `;
 
-export const Typography = () => (
+export const Typography: React.FC = () => (
   <FontList>
     <Body>Body &mdash; Roboto Regular 24</Body>
     <Headline>Headline &mdash; Roboto Black 51</Headline>

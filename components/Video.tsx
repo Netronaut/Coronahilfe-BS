@@ -1,14 +1,17 @@
 import React from 'react';
 
-type VideoProps = {
+interface VideoProps {
   src: string;
   className?: string;
-};
+  width: number;
+  height: number;
+}
 
-export const Video: React.FC<VideoProps> = ({ src, className }) => (
+export const Video: React.FC<VideoProps> = ({ src, className, width, height }) => (
   <div className={className}>
     <iframe
-      height="300"
+      width={width}
+      height={height}
       src={src}
       frameBorder="0"
       allow="autoplay; encrypted-media"

@@ -13,7 +13,7 @@ const withThemeContext = (
 };
 
 export const Body = withThemeContext(styled.p`
-  ${props => `
+  ${(props): string => `
     color: ${props.theme.colors.blue};
     font-family: ${props.theme.font.family};
     font-weight: ${props.theme.font.regular};
@@ -22,7 +22,7 @@ export const Body = withThemeContext(styled.p`
 `);
 
 export const Headline = withThemeContext(styled.div`
-  ${props => `
+  ${(props): string => `
     color: ${props.theme.colors.red};
     font-family: ${props.theme.font.family};
     font-weight: ${props.theme.font.bold};
@@ -33,7 +33,7 @@ export const Headline = withThemeContext(styled.div`
 `);
 
 export const TwoLine = withThemeContext(styled.div`
-  ${props => `
+  ${(props): string => `
     color: ${props.theme.colors.red};
     font-family: ${props.theme.font.family};
     font-weight: ${props.theme.font.bold};
@@ -42,7 +42,7 @@ export const TwoLine = withThemeContext(styled.div`
 `);
 
 export const Secondary = withThemeContext(styled.h2`
-  ${props => `
+  ${(props): string => `
     color: ${props.theme.colors.red};
     font-family: ${props.theme.font.family};
     font-weight: ${props.theme.font.bold};
@@ -51,7 +51,7 @@ export const Secondary = withThemeContext(styled.h2`
 `);
 
 export const Hero = withThemeContext(styled.div`
-  ${props => `
+  ${(props): string => `
 color: ${props.theme.colors.red};
   font-family: ${props.theme.font.family};
   font-weight: ${props.theme.font.medium};
@@ -61,7 +61,7 @@ color: ${props.theme.colors.red};
 `);
 
 export const Navigation = withThemeContext(styled.div`
-  ${props => `
+  ${(props): string => `
     color: ${props.theme.colors.blue};
     font-family: ${props.theme.font.family};
     font-weight: ${props.theme.font.medium};
@@ -79,7 +79,7 @@ export const Navigation = withThemeContext(styled.div`
 `);
 
 export const NavigationSmall = withThemeContext(styled.div`
-  ${props => `
+  ${(props): string => `
     color: ${props.theme.colors.blue};
     font-family: ${props.theme.font.family};
     font-weight: ${props.theme.font.regular};
@@ -97,7 +97,7 @@ export const NavigationSmall = withThemeContext(styled.div`
 `);
 
 export const Splash = withThemeContext(styled.div`
-  ${props => `
+  ${(props): string => `
     color: ${props.theme.colors.blue};
     font-family: ${props.theme.font.condensed};
     font-weight: ${props.theme.font.regular};
@@ -106,7 +106,7 @@ export const Splash = withThemeContext(styled.div`
 `);
 
 export const LogoLower = withThemeContext(styled.div`
-  ${props => `
+  ${(props): string => `
     color: ${props.theme.colors.blue};
     font-family: ${props.theme.font.family};
     font-weight: ${props.theme.font.regular};
