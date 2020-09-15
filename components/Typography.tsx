@@ -5,14 +5,14 @@ type TypographyProps = {
   theme?: Record<string, any>;
 };
 
-const withThemeContext = (
-  Component: React.FC<TypographyProps>,
-): React.FC<TypographyProps> => (props): React.ReactElement => {
+const withThemeContext = (Component: React.FC<TypographyProps>): React.FC<TypographyProps> => (
+  props,
+): React.ReactElement => {
   const theme = useContext(ThemeContext);
   return <Component {...props} theme={theme} />;
 };
 
-export const Body = withThemeContext(styled.p`
+export const Body = withThemeContext(styled.div`
   ${(props): string => `
     color: ${props.theme.colors.blue};
     font-family: ${props.theme.font.family};

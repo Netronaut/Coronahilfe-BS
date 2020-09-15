@@ -51,6 +51,8 @@ const grid = {
       medium: '10rem',
       large: '19rem',
     },
+    top: margin.xl,
+    bottom: margin.xl,
   },
   step: {
     width: '26.25rem',

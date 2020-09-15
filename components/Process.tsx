@@ -1,13 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import {
-  POI as POIIcon,
-  Telephone,
-  Money,
-  Cart,
-  Grocery,
-  Money2,
-} from './Icons';
+import { POI as POIIcon, Telephone, Money, Cart, Grocery, Money2 } from './Icons';
 import { Body } from './Typography';
 
 const Container = styled.div`
@@ -15,12 +8,13 @@ const Container = styled.div`
   align-items: center;
   flex-direction: column;
   position: relative;
+  margin-top: ${({ theme }): string => theme.grid.margin.xxl};
 `;
 
 const Banner = styled.div`
   position: absolute;
   height: 535px;
-  backgrouns-color: ${({ theme }) => theme.colors.bluewhite};
+  backgrouns-color: ${({ theme }): string => theme.colors.bluewhite};
 `;
 
 const POI = styled(POIIcon)`
@@ -73,7 +67,7 @@ const Item = styled.div`
 `;
 
 const Dot = styled.div`
-  width: calc(${({ theme }) => theme.grid.margin.xxl} * 2);
+  width: calc(${({ theme }): string => theme.grid.margin.xxl} * 2);
   flex-shrink: 0;
 
   &:before {
@@ -81,7 +75,7 @@ const Dot = styled.div`
     position: absolute;
     z-index: 2;
     left: calc(50% - 0.5rem);
-    background-color: ${({ theme }) => theme.colors.red};
+    background-color: ${({ theme }): string => theme.colors.red};
     border-radius: 50%;
     width: 1rem;
     height: 1rem;
@@ -94,7 +88,7 @@ const Dot = styled.div`
     height: calc(100% + 0.5rem);
     top: calc(50% + 0.5rem);
     left: calc(50% - 2.5px);
-    border-right: 5px solid ${({ theme }) => theme.colors.blue};
+    border-right: 5px solid ${({ theme }): string => theme.colors.blue};
   }
 
   &.last:after {

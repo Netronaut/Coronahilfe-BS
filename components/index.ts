@@ -5,4 +5,4 @@ export * from './Process';
 export * from './Step';
 export * from './Video';
 export * from './Header';
-export * from './Grid';
+export * from './Footer';

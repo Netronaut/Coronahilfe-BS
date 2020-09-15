@@ -12,7 +12,7 @@ const Container = styled.div`
 
   ${({ theme }): string => `
     height: ${theme.grid.navigation.height};
-    padding: 0 ${theme.grid.layout.right} 0 ${theme.grid.layout.left.small};
+    padding: 0 ${theme.grid.layout.right.small} 0 ${theme.grid.layout.left.small};
     background-color: ${theme.colors.bluewhite};
   `};
 `;
