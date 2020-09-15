@@ -10,12 +10,13 @@ const ColorTile = styled.div`
   height: 4rem;
   background-color: ${props => props.color};
   box-shadow: 2px 2px 6px -2px rgba(0, 0, 0, 0.5);
+  padding-top: 4rem;
 `;
 
 const ColorList = styled.section`
   display: flex;
   > * {
-    margin: 0.4em;
+    margin: 1em;
   }
 `;
 
@@ -23,11 +24,11 @@ export const Colors = () => (
   <ThemeConsumer>
     {theme => (
       <ColorList>
-        <ColorTile color={theme.colors.blue} />
-        <ColorTile color={theme.colors.lightblue} />
-        <ColorTile color={theme.colors.bluewhite} />
-        <ColorTile color={theme.colors.creamwhite} />
-        <ColorTile color={theme.colors.red} />
+        <ColorTile color={theme.colors.blue}>blue</ColorTile>
+        <ColorTile color={theme.colors.lightblue}>lightblue</ColorTile>
+        <ColorTile color={theme.colors.bluewhite}>bluewhite</ColorTile>
+        <ColorTile color={theme.colors.creamwhite}>creamwhite</ColorTile>
+        <ColorTile color={theme.colors.red}>red</ColorTile>
       </ColorList>
     )}
   </ThemeConsumer>

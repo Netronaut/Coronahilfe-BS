@@ -1,5 +1,5 @@
 import React from 'react';
-import { Logo, Badge, Navigation, Step, Process } from '../components';
+import { Logo, Badge, Navigation, Step, Process, SectionBreak } from '../components';
 import { Padding } from '../.storybook/decorators';
 
 export default {
@@ -32,9 +32,7 @@ NavigationStory.story = {
 export const StepsStory = (): React.ReactNode => (
   <>
     <Step num={1}>Melden Sie sich bei uns unter 0531 1805 9703.</Step>
-    <Step num={2}>
-      Ein Einkaufshelfer wird Ihnen zugeteilt und meldet sich.
-    </Step>
+    <Step num={2}>Ein Einkaufshelfer wird Ihnen zugeteilt und meldet sich.</Step>
   </>
 );
 
@@ -50,4 +48,10 @@ export const ProcessStory = (): React.ReactNode => (
 
 ProcessStory.story = {
   name: 'Process',
+};
+
+export const SectionBreakStory = (): React.ReactNode => <SectionBreak />;
+
+SectionBreakStory.story = {
+  name: 'SectionBreak',
 };

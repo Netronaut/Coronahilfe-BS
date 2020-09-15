@@ -8,6 +8,7 @@ import {
   Logo,
   Navigation,
   Process,
+  SectionBreak,
   Step,
   Video,
 } from '../components';
@@ -99,6 +100,10 @@ const Home: React.FC = () => (
     </Row>
 
     <Footer>
+      <SectionBreak />
+      <Row indent="large">
+        <Secondary>Partner &amp; Unterstützer</Secondary>
+      </Row>
       <Row indent="large" center>
         <TUBS />
         <Sandkasten />
