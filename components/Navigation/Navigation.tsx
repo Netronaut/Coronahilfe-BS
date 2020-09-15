@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import Link from 'next/link';
 import { Navigation as NavigationFont, NavigationSmall } from '../Typography';
 import { TUBS, Sandkasten as SandkastenLogo } from '../Icons';
+import { Row } from '../Grid';
 
 const Container = styled.div`
   display: flex;
@@ -78,18 +79,22 @@ export const Navigation: React.FC = () => (
         <a href="#helfer-werden">Helfer werden</a>
         <a href="#partner">Partner</a>
       </MainNav>
+
       <PartnerLogos>
         <TUBS height={128} />
         <Sandkasten size={168} />
       </PartnerLogos>
     </Container>
-    <SubNavigation>
-      <Link href="/datenschutzerklärung">
-        <a>Datenschutzerklärung</a>
-      </Link>
-      <Link href="/impressum-kontakt">
-        <a>Impressum & Kontakt</a>
-      </Link>
-    </SubNavigation>
+
+    <Row right nomargin>
+      <SubNavigation>
+        <Link href="/datenschutzerklärung">
+          <a>Datenschutzerklärung</a>
+        </Link>
+        <Link href="/impressum-kontakt">
+          <a>Impressum & Kontakt</a>
+        </Link>
+      </SubNavigation>
+    </Row>
   </>
 );

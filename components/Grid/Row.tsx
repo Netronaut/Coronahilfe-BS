@@ -5,12 +5,21 @@ interface RowProps {
   vertical?: boolean;
   center?: boolean;
   indent?: 'small' | 'medium' | 'large';
+  nomargin?: boolean;
+  right?: boolean;
 }
 
 export const Row = styled.div<RowProps>`
   display: flex;
 
-  ${({ theme, vertical = false, indent = 'small', center = false }): string => `
+  ${({
+    theme,
+    vertical = false,
+    indent = 'small',
+    center = false,
+    nomargin = false,
+    right = false,
+  }): string => `
     justify-content: ${center ? 'space-evenly' : 'space-between'};
     flex-direction: ${vertical ? 'column' : 'row'};
 
@@ -32,5 +41,16 @@ export const Row = styled.div<RowProps>`
         margin-right: 0;
       }
     }
+
+    ${
+      nomargin
+        ? `
+          margin-top: 0;
+          margin-bottom: 0;
+        `
+        : ''
+    }
+    ${right ? 'justify-content: flex-end;' : ''}
+
   `}
 `;
