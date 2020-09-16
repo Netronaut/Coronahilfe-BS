@@ -1,4 +1,5 @@
 import React from 'react';
+import styled from 'styled-components';
 
 interface VideoProps {
   src: string;
@@ -7,8 +8,19 @@ interface VideoProps {
   height: number;
 }
 
-export const Video: React.FC<VideoProps> = ({ src, className, width, height }) => (
-  <div className={className}>
+const VideoContainer = styled.div`
+  width: 100%;
+  max-width: 52rem;
+
+  align-self: center;
+
+  iframe {
+    width: 100%;
+  }
+`;
+
+export const Video: React.FC<VideoProps> = ({ src, width, height }) => (
+  <VideoContainer>
     <iframe
       width={width}
       height={height}
@@ -17,15 +29,5 @@ export const Video: React.FC<VideoProps> = ({ src, className, width, height }) =
       allow="autoplay; encrypted-media"
       allowFullScreen
     ></iframe>
-    <style jsx>{`
-      width: 100%;
-      max-width: 52rem;
-
-      align-self: center;
-
-      iframe {
-        width: 100%;
-      }
-    `}</style>
-  </div>
+  </VideoContainer>
 );

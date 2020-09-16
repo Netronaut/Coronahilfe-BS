@@ -9,3 +9,4 @@ export * from './Footer';
 export * from './BannerBackground';
 export * from './SectionBreak';
 export * from './FooterBanner';
+export * from './GlobalStyle';

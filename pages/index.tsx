@@ -16,11 +16,17 @@ import {
 import { Body, Hero, Secondary } from '../components/Typography';
 import { Grocery, Netronaut, Rotary, Sandkasten, TUBS } from '../components/Icons';
 import { Cell, Column, Row } from '../components/Grid';
+import { GlobalStyle } from '../components/GlobalStyle';
 
 const Home: React.FC = () => (
   <>
+    <GlobalStyle />
     <Head>
       <title>Studentische Einkaufshilfe Braunschweig</title>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet"
+      />
     </Head>
 
     <Header>
