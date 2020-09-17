@@ -1,28 +1,33 @@
 import React from 'react';
+import styled from 'styled-components';
 
-type VideoProps = {
+interface VideoProps {
   src: string;
   className?: string;
-};
+  width: number;
+  height: number;
+}
 
-export const Video: React.FC<VideoProps> = ({ src, className }) => (
-  <div className={className}>
+const VideoContainer = styled.div`
+  width: 100%;
+  max-width: 52rem;
+
+  align-self: center;
+
+  iframe {
+    width: 100%;
+  }
+`;
+
+export const Video: React.FC<VideoProps> = ({ src, width, height }) => (
+  <VideoContainer>
     <iframe
-      height="300"
+      width={width}
+      height={height}
       src={src}
       frameBorder="0"
       allow="autoplay; encrypted-media"
       allowFullScreen
     ></iframe>
-    <style jsx>{`
-      width: 100%;
-      max-width: 52rem;
-
-      align-self: center;
-
-      iframe {
-        width: 100%;
-      }
-    `}</style>
-  </div>
+  </VideoContainer>
 );

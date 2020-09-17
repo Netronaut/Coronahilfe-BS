@@ -1,11 +1,4 @@
-import React, {
-  ReactElement,
-  ReactNode,
-  ReactInstance,
-  ReactComponentElement,
-  ComponentElement,
-  JSXElementConstructor,
-} from 'react';
+import React, { ReactComponentElement } from 'react';
 import {
   Cart,
   TUBS,
@@ -17,7 +10,7 @@ import {
   Sandkasten,
   POI,
   Telephone,
-} from '../Icons';
+} from '../components/Icons';
 import styled from 'styled-components';
 
 export default {

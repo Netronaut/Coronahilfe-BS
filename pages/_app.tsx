@@ -1,4 +1,6 @@
 import React from 'react';
+import { ThemeProvider } from 'styled-components';
+import { theme } from '../components/theme';
 
 type AppProps = {
   Component: React.ComponentType;
@@ -6,7 +8,9 @@ type AppProps = {
 };
 
 const App: React.FC<AppProps> = ({ Component, pageProps }) => (
-  <Component {...pageProps} />
+  <ThemeProvider theme={theme}>
+    <Component {...pageProps} />
+  </ThemeProvider>
 );
 
 export default App;
