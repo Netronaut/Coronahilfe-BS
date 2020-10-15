@@ -2,12 +2,26 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-First, run the development server:
+1. Install npm and nodejs via [nvm](https://github.com/nvm-sh/nvm#installing-and-updating):
+
+```bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.36.0/install.sh | bash
+...
+nvm install 14
+```
+
+2. Clone and enter project directory:
+
+```bash
+git clone git@github.com:jhohlfeld/Einkaufshilfe-BS.git
+cd Einkaufshilfe-BS
+npm install
+```
+
+3.  Run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
