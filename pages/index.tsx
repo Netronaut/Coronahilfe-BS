@@ -17,7 +17,7 @@ const Home: React.FC = () => (
       </Cell>
       <Cell>
         <Hero>
-          Wenn Sie wegen der aktuellen Situation besorgt sind einkaufen zu gehen, möchten wir ihnen
+          Wenn Siee wegen der aktuellen Situation besorgt sind einkaufen zu gehen, möchten wir ihnen
           unsere Unterstützung anbieten!
         </Hero>
       </Cell>
