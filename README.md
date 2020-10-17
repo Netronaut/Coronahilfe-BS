@@ -15,6 +15,11 @@ nvm install 14
 ```bash
 git clone git@github.com:jhohlfeld/Einkaufshilfe-BS.git
 cd Einkaufshilfe-BS
+
+# optionally change the branch
+git branch
+git checkout <branch name>
+
 npm install
 ```
 
@@ -27,6 +32,17 @@ npm run dev
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+
+4. When finished editing, add your changes:
+
+```bash
+$ git add -p
+# add the changes you want to commit
+$ git commit -m"<commit message>"
+# you may commit more changes
+# when finished, push
+$ git push
+```
 
 ## Learn More
 
