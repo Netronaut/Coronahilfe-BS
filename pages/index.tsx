@@ -1,42 +1,12 @@
 import React from 'react';
-import Head from 'next/head';
-import {
-  Badge,
-  BannerBackground,
-  Footer,
-  FooterBanner,
-  Header,
-  Logo,
-  Navigation,
-  Process,
-  SectionBreak,
-  Step,
-  Video,
-} from '../components';
+import { BannerBackground, Process, Step, Video } from '../components';
 import { Body, Hero, Secondary } from '../components/Typography';
-import { Grocery, Netronaut, Rotary, Sandkasten, TUBS } from '../components/Icons';
+import { Grocery } from '../components/Icons';
 import { Cell, Column, Row } from '../components/Grid';
-import { GlobalStyle } from '../components/GlobalStyle';
+import { Layout } from '../components/layout/Layout';
 
 const Home: React.FC = () => (
-  <>
-    <GlobalStyle />
-    <Head>
-      <title>Studentische Einkaufshilfe Braunschweig</title>
-      <link
-        href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@400;500;700;900&display=swap"
-        rel="stylesheet"
-      />
-    </Head>
-
-    <Header>
-      <Row>
-        <Logo />
-        <Badge />
-      </Row>
-      <Navigation />
-    </Header>
-
+  <Layout>
     <Row>
       <Cell>
         <Body>
@@ -105,31 +75,7 @@ const Home: React.FC = () => (
         <a href="#">Stadt Braunschweig - Hilfe-Bieten-Suchen</a>
       </Body>
     </Row>
-
-    <Footer>
-      <SectionBreak />
-      <Row indent="large">
-        <Secondary>Partner &amp; Unterstützer</Secondary>
-      </Row>
-      <Row indent="large" center>
-        <a href="https://www.tu-braunschweig.de/">
-          <TUBS />
-        </a>
-        <a href="https://www.sandkasten.tu-braunschweig.de/">
-          <Sandkasten />
-        </a>
-      </Row>
-      <Row indent="large" center>
-        <a href="https://braunschweig.rotary.de/">
-          <Rotary />
-        </a>
-        <a href="https://netronaut.de/">
-          <Netronaut />
-        </a>
-      </Row>
-      <FooterBanner />
-    </Footer>
-  </>
+  </Layout>
 );
 
 export default Home;

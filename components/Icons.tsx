@@ -58,7 +58,5 @@ export const Rotary: React.FC<IconProps> = props => (
 );
 
 export const Netronaut: React.FC<IconProps> = props => (
-  <a href="https://netronaut.de" target="blank">
-    <Icon src="icons/netronaut-logo.svg" alt="netronaut-logo" {...props} />
-  </a>
+  <Icon src="icons/netronaut-logo.svg" alt="netronaut-logo" {...props} />
 );

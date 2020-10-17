@@ -1,6 +1,7 @@
 import React from 'react';
-import { Logo, Badge, Navigation, Step, Process, SectionBreak } from '../components';
+import { Step, Process, SectionBreak } from '../components';
 import { Padding } from '../.storybook/decorators';
+import { Badge, Logo, Navigation } from '../components/layout';
 
 export default {
   component: Logo,
