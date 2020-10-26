@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import Link from 'next/link';
 import { Navigation as NavigationFont, NavigationSmall } from '../../Typography';
 import { TUBS, Sandkasten as SandkastenLogo } from '../../Icons';
-import { Row } from '../../Grid';
+import { Row, useMediaQuery } from '../../Grid';
 
 const Container = styled.div`
   display: flex;
@@ -70,31 +70,37 @@ const SubNavigation = styled(NavigationSmall)`
   }
 `;
 
-export const Navigation: React.FC = () => (
-  <>
-    <Container>
-      <MainNav>
-        <a href="#über-uns">Über uns</a>
-        <a href="#so-funktioniert-es">So funktioniert es</a>
-        <a href="#helfer-werden">Helfer werden</a>
-        <a href="#partner">Partner</a>
-      </MainNav>
+export const Navigation: React.FC = () => {
+  const isLarge = useMediaQuery('(min-width: 1024px)');
 
-      <PartnerLogos>
-        <TUBS height={128} />
-        <Sandkasten size={168} />
-      </PartnerLogos>
-    </Container>
+  return (
+    <>
+      <Container>
+        <MainNav>
+          <a href="#über-uns">Über uns</a>
+          <a href="#so-funktioniert-es">So funktioniert es</a>
+          <a href="#helfer-werden">Helfer werden</a>
+          <a href="#partner">Partner</a>
+        </MainNav>
 
-    <Row right nomargin>
-      <SubNavigation>
-        <Link href="/datenschutzerklärung">
-          <a>Datenschutzerklärung</a>
-        </Link>
-        <Link href="/impressum-kontakt">
-          <a>Impressum & Kontakt</a>
-        </Link>
-      </SubNavigation>
-    </Row>
-  </>
-);
+        {isLarge && (
+          <PartnerLogos>
+            <TUBS size={240} />
+            <Sandkasten size={168} />
+          </PartnerLogos>
+        )}
+      </Container>
+
+      <Row right nomargin>
+        <SubNavigation>
+          <Link href="/datenschutzerklärung">
+            <a>Datenschutzerklärung</a>
+          </Link>
+          <Link href="/impressum-kontakt">
+            <a>Impressum & Kontakt</a>
+          </Link>
+        </SubNavigation>
+      </Row>
+    </>
+  );
+};
