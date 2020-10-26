@@ -29,6 +29,6 @@ export const BannerBackground = styled.div<IProps>`
           ${theme.grid.layout.left[indent]};`
     }
 
-    ${size ? `background-size: ${size}px;` : ''}
+    ${size ? `background-size: ${size / 16}rem;` : ''}
   `}
 `;

@@ -15,13 +15,13 @@ const font = {
   medium: 500,
   regular: 400,
   size: {
-    xxs: '14px',
-    xs: '18px',
-    s: '24px',
-    m: '28px',
-    l: '44px',
-    xl: '51px',
-    xxl: '70px',
+    xxs: '0.875rem', // 14px at 16px body font-size
+    xs: '1.125rem', // 18px
+    s: '1.5rem', // 24px
+    m: '1.75rem', // 28px
+    l: '2.75rem', // 44px
+    xl: '3.25rem', // 52px
+    xxl: '4.5rem', // 72px
   },
 };
 

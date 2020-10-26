@@ -13,11 +13,16 @@ export interface IconProps {
 }
 
 export const Icon: React.FC<IconProps & ImgHTMLAttributes<HTMLImageElement>> = ({
-  size,
+  size = 160,
   width,
   height,
   ...props
-}) => <Image style={{ width: `${width || size}px`, height: `${height || size}px` }} {...props} />;
+}) => (
+  <Image
+    style={{ width: `${(width || size) / 16}rem`, height: `${(height || size) / 16}rem` }}
+    {...props}
+  />
+);
 
 export const Cart: React.FC<IconProps> = props => (
   <Icon src="icons/cart.svg" alt="cart" {...props} />

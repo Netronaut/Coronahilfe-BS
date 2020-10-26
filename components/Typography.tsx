@@ -54,8 +54,8 @@ export const Navigation = styled.div`
     font-family: ${props.theme.font.family};
     font-weight: ${props.theme.font.medium};
     font-size: ${props.theme.font.size.m};
+  `}
 
-    `}
   a {
     color: inherit;
     text-decoration: none;
