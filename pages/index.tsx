@@ -17,7 +17,7 @@ const Home: React.FC = () => (
       </Cell>
       <Cell>
         <Hero>
-          Wenn Sie wegen der aktuellen Situation besorgt sind einkaufen zu gehen, möchten wir ihnen
+          Wenn Sie wegen der aktuellen Situation besorgt sind einkaufen zu gehen, möchten wir Ihnen
           unsere Unterstützung anbieten!
         </Hero>
       </Cell>
@@ -40,9 +40,11 @@ const Home: React.FC = () => (
     </BannerBackground>
 
     <Row vertical indent="large">
-      <Secondary>Dabei helfen wir ihnen</Secondary>
+      <Secondary>Dabei helfen wir Ihnen</Secondary>
       <Body>
         Wir gehen für Sie einkaufen, erledigen rezeptfreie Apothekengänge oder sonstige Besorgungen.
+        <br />
+        <b>Dies alles auf ehrenamtlicher Basis; ohne Gebühren.</b>
       </Body>
     </Row>
 
@@ -51,7 +53,10 @@ const Home: React.FC = () => (
       <Step num={1}>
         Melden Sie sich bei uns unter <span className="nowrap">0531 1805 9703</span>
       </Step>
-      <Step num={2}>Ein Einkaufshelfer wird Ihnen zugeteilt und meldet sich.</Step>
+      <Step num={2}>
+        Gerne erklären wir Ihnen nochmals die Abläufe. Wir suchen danach helfende Hände in Ihrer
+        Wohnortnähe, die sich nach erfolgreicher Vermittlung telefonisch bei Ihnen melden.
+      </Step>
     </Row>
 
     <BannerBackground src="/grocery-background.png" size={400} indent="large">
@@ -61,10 +66,12 @@ const Home: React.FC = () => (
     <Row vertical indent="large">
       <Secondary>Werde Helfer*in</Secondary>
       <Body as="p">
-        Bist du Student*in der TU und möchtest Einkaufshelfer*in werden? Nichts lieber als das!
-        Kommt mit auf unsere TU Sandkasten Seite und werde Teil des Teams:
+        Bist du Student*in der TU und möchtest Einkaufshelfer*in werden? Nichts lieber als das! Komm
+        mit auf unsere TU Sandkasten Seite und werde Teil des Teams:
         <br />
-        <a href="mailto:Einkaufshilfe@TU-Sandkasten">Einkaufshilfe @TU Sandkasten</a>.
+        <a href="https://www.sandkasten.tu-braunschweig.de/projekte/coronavirus-einkaufshilfe-fuer-aeltere-gefaehrdete">
+          Einkaufshelfer*in werden
+        </a>
       </Body>
       <Body as="p">
         Wenn ihr NICHT in Braunschweig gemeldete Studierende seid und freiwillige Helfer*in werden
@@ -72,7 +79,9 @@ const Home: React.FC = () => (
         Helfer*innen Kräfte hat das große Vorteile und wir können die uns zur Verfügung stehenden
         Kapazitäten effektiver einsetzen.
         <br />
-        <a href="#">Stadt Braunschweig - Hilfe-Bieten-Suchen</a>
+        <a href="https://www.braunschweig.de/aktuell/hilfe-bieten-suchen.php#">
+          Stadt Braunschweig - Hilfe-Bieten-Suchen
+        </a>
       </Body>
     </Row>
   </Layout>

@@ -3,7 +3,7 @@ import Head from 'next/head';
 import { GlobalStyle } from './GlobalStyle';
 import { Row } from '../Grid';
 import { Secondary } from '../Typography';
-import { Netronaut, Rotary, Sandkasten, TUBS } from '../Icons';
+import { Netronaut, Denkraum, Sandkasten, TUBS } from '../Icons';
 import { Header } from './Header';
 import { Logo } from './Logo';
 import { Badge } from './Badge';
@@ -48,8 +48,8 @@ export const Layout: React.FC = ({ children }) => (
         </a>
       </Row>
       <Row indent="large" center>
-        <a href="https://braunschweig.rotary.de/">
-          <Rotary />
+        <a href="https://denkraum-braunschweig.de/">
+          <Denkraum size={300} />
         </a>
         <a href="https://netronaut.de/">
           <Netronaut />
