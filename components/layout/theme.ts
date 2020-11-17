@@ -1,3 +1,5 @@
+import { css, FlattenSimpleInterpolation } from 'styled-components';
+
 const colors = {
   blue: '#545D8E',
   lightblue: '#0070F3',
@@ -72,4 +74,22 @@ export const theme = {
   colors,
   font,
   grid,
+};
+
+export const breakpoints = {
+  large: (innerCSS: string): string => `
+    @media screen and (min-width: 1440px) {
+      ${innerCSS}
+    }
+  `,
+  medium: (innerCSS: string): string => `
+    @media screen and (min-width: 1024px) {
+      ${innerCSS}
+    }
+  `,
+  small: (innerCSS: string | FlattenSimpleInterpolation): string => `
+    @media screen and (min-width: 768px) {
+      ${innerCSS}
+    }
+  `,
 };

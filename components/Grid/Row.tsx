@@ -1,4 +1,5 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
+import { breakpoints } from '../layout';
 import { Cell } from './Cell';
 
 interface RowProps {
@@ -21,17 +22,22 @@ export const Row = styled.div<RowProps>`
     right = false,
   }): string => `
     justify-content: ${center ? 'space-evenly' : 'space-between'};
-    flex-direction: ${vertical ? 'column' : 'row'};
 
-    margin:
-      ${theme.grid.layout.top}
-      ${theme.grid.layout.right[indent]}
-      ${theme.grid.layout.bottom}
-      ${theme.grid.layout.left[indent]};
+    margin-top: ${theme.grid.layout.top}
+    margin-bottom: ${theme.grid.layout.bottom};
+    margin-left: 10px;
+    margin-right: 10px;
+
+    > * {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
 
     ${Cell} {
-      margin-left: ${theme.grid.margin.l};
-      margin-right: ${theme.grid.margin.l};
+      ${breakpoints.small(`
+        margin-left: ${theme.grid.margin.l};
+        margin-right: ${theme.grid.margin.l};
+      `)}
 
       &:first-child {
         margin-left: 0;
@@ -52,5 +58,21 @@ export const Row = styled.div<RowProps>`
     }
     ${right ? 'justify-content: flex-end;' : ''}
 
+    flex-direction: column;
+    align-items: center;
+
+    ${breakpoints.small(`
+      flex-direction: ${vertical ? 'column' : 'row'};
+      align-items: revert;
+      margin-right: ${theme.grid.layout.right[indent]};
+      margin-left: ${theme.grid.layout.left[indent]};
+
+      > * {
+        margin-top: revert;
+        margin-bottom: revert;
+      }
+  
+    `)}
+    
   `}
 `;

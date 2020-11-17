@@ -1,4 +1,5 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle, css } from 'styled-components';
+import { breakpoints } from './theme';
 
 export const GlobalStyle = createGlobalStyle`
   p,
@@ -9,9 +10,9 @@ export const GlobalStyle = createGlobalStyle`
   html {
     font-size: 12px;
 
-    @media screen and (min-width: 1440px) {
+    ${breakpoints.medium(css`
       font-size: 16px;
-    }
+    `)}
   }
 
   body {

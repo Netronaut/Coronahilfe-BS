@@ -71,7 +71,7 @@ const SubNavigation = styled(NavigationSmall)`
 `;
 
 export const Navigation: React.FC = () => {
-  const isLarge = useMediaQuery('(min-width: 1024px)');
+  const isLarge = useMediaQuery('(min-width: 768px)');
 
   return (
     <>

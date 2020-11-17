@@ -1,7 +1,8 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { Telephone } from '../Icons';
 import { Splash } from '../Typography';
+import { breakpoints } from './theme';
 
 export const UnstyledBadge: React.FC<{ className?: string }> = ({ className }) => (
   <div className={className}>
@@ -18,4 +19,8 @@ export const Badge = styled(UnstyledBadge)`
   > :last-child {
     margin-left: 1rem;
   }
+
+  ${breakpoints.small(`
+    margin-left: 3rem;
+  `)}
 `;

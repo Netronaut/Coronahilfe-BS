@@ -71,7 +71,7 @@ export const NavigationSmall = styled.div`
     color: ${props.theme.colors.blue};
     font-family: ${props.theme.font.family};
     font-weight: ${props.theme.font.regular};
-    font-size: ${props.theme.font.size.xxs};
+    font-size: ${props.theme.font.size.xs};
   `}
 
   a {
@@ -90,6 +90,7 @@ export const Splash = styled.div`
     font-family: ${props.theme.font.condensed};
     font-weight: ${props.theme.font.regular};
     font-size: ${props.theme.font.size.l};
+    white-space: nowrap;
   `}
 `;
 
