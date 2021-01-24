@@ -53,12 +53,10 @@ export const Sandkasten: React.FC<IconProps> = props => (
   <Icon src="icons/sandkasten-logo.png" alt="sandkasten-logo" {...props} />
 );
 
-export const Rotary: React.FC<IconProps> = props => (
-  <Icon src="icons/rotary-logo.png" alt="rotary-logo" {...props} />
+export const Denkraum: React.FC<IconProps> = props => (
+  <Icon src="icons/denkraum-logo.png" alt="denkraum-logo" {...props} />
 );
 
 export const Netronaut: React.FC<IconProps> = props => (
-  <a href="https://netronaut.de" target="blank">
-    <Icon src="icons/netronaut-logo.svg" alt="netronaut-logo" {...props} />
-  </a>
+  <Icon src="icons/netronaut-logo.svg" alt="netronaut-logo" {...props} />
 );

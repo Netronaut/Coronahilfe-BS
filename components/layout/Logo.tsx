@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { LogoLower, Headline } from './Typography';
+import { LogoLower, Headline } from '../Typography';
 
 const FirstLine = styled(Headline)`
   letter-spacing: 0.8px;

@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 import Link from 'next/link';
-import { Navigation as NavigationFont, NavigationSmall } from '../Typography';
-import { TUBS, Sandkasten as SandkastenLogo } from '../Icons';
-import { Row } from '../Grid';
+import { Navigation as NavigationFont, NavigationSmall } from '../../Typography';
+import { TUBS, Sandkasten as SandkastenLogo } from '../../Icons';
+import { Row } from '../../Grid';
 
 const Container = styled.div`
   display: flex;

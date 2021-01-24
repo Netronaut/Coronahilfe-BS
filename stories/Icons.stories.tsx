@@ -38,9 +38,7 @@ const IconCardTitle = styled.div`
   padding: 0.5em;
 `;
 
-const IconCard: React.FC<{ icon: ReactComponentElement<any, {}> }> = ({
-  icon,
-}) => {
+const IconCard: React.FC<{ icon: ReactComponentElement<any, {}> }> = ({ icon }) => {
   return (
     <div>
       <IconCardImage>
