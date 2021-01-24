@@ -18,7 +18,7 @@ const Container = styled.div`
     padding: 0 10px;
     background-color: ${theme.colors.bluewhite};
   
-    ${breakpoints.medium(`
+    ${breakpoints.small(`
         padding: 0 ${theme.grid.layout.right.small} 0 ${theme.grid.layout.left.small};
     `)}
   
@@ -78,7 +78,7 @@ const SubNavigation = styled(NavigationSmall)`
 `;
 
 export const Navigation: React.FC = () => {
-  const isLarge = useMediaQuery('(min-width: 768px)');
+  const isMedium = useMediaQuery('(min-width: 768px)');
 
   return (
     <>
@@ -90,7 +90,7 @@ export const Navigation: React.FC = () => {
           <a href="#partner">Partner</a>
         </MainNav>
 
-        {isLarge && (
+        {isMedium && (
           <PartnerLogos>
             <TUBS size={240} />
             <Sandkasten size={168} />
