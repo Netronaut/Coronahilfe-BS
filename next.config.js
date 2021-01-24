@@ -13,6 +13,11 @@ module.exports = withBundleAnalyzer({
       };
     }
 
+    config.module.rules.push({
+      test: /\.md$/,
+      loader: 'raw-loader',
+    });
+
     return config;
   },
 });

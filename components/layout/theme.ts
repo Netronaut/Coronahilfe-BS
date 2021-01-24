@@ -1,4 +1,4 @@
-import { css, FlattenSimpleInterpolation } from 'styled-components';
+import { FlattenSimpleInterpolation } from 'styled-components';
 
 const colors = {
   blue: '#545D8E',

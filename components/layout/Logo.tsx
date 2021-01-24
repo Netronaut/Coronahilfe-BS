@@ -16,13 +16,13 @@ const LogoUnstyled: React.FC<{ className?: string }> = ({ className }) => (
 );
 
 export const Logo = styled(LogoUnstyled)`
-  text-transform: uppercase;
   display: flex;
   width: 382px;
   flex-flow: wrap;
 
   align-items: center;
   flex-direction: column;
+  text-transform: uppercase;
 
   ${breakpoints.small(`
     align-items: flex-start;

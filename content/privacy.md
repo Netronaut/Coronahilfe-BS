@@ -1,11 +1,8 @@
----
-title: Datenschutz
-description: Uns liegt der Schutz deiner Daten am Herzen.
----
+## Datenschutzerklärung
 
-## Ansprechpartner bei Datenschutzfragen
+Ansprechpartner in Datenschutzfragen:
 
-Jakob Hohlfeld (jakob@netronaut.de)
+Dennis Ruth (d.ruth@tu-braunschweig.de)
 
 1. Grundsätzliche Angaben zur Datenverarbeitung und Rechtsgrundlagen
 

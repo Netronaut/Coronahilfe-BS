@@ -11,6 +11,7 @@ import { Navigation } from './Navigation';
 import { Footer } from './Footer';
 import { SectionBreak } from '../SectionBreak';
 import { FooterBanner } from './FooterBanner';
+import Link from 'next/link';
 
 export const Layout: React.FC = ({ children }) => (
   <>
@@ -26,7 +27,11 @@ export const Layout: React.FC = ({ children }) => (
 
     <Header>
       <Row>
-        <Logo />
+        <Link href="/">
+          <a>
+            <Logo />
+          </a>
+        </Link>
         <Badge />
       </Row>
       <Navigation />

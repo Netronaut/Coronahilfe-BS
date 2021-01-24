@@ -100,10 +100,10 @@ export const Navigation: React.FC = () => {
 
       <Row right nomargin>
         <SubNavigation>
-          <Link href="/datenschutzerklärung">
+          <Link href="/privacy">
             <a>Datenschutzerklärung</a>
           </Link>
-          <Link href="/impressum-kontakt">
+          <Link href="/privacy">
             <a>Impressum & Kontakt</a>
           </Link>
         </SubNavigation>
