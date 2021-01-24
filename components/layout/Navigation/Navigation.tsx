@@ -1,20 +1,27 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import Link from 'next/link';
 import { Navigation as NavigationFont, NavigationSmall } from '../../Typography';
 import { TUBS, Sandkasten as SandkastenLogo } from '../../Icons';
 import { Row, useMediaQuery } from '../../Grid';
+import { breakpoints } from '../theme';
 
 const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
   white-space: nowrap;
+  overflow: auto;
 
   ${({ theme }): string => `
     height: ${theme.grid.navigation.height};
-    padding: 0 ${theme.grid.layout.right.small} 0 ${theme.grid.layout.left.small};
+    padding: 0 10px;
     background-color: ${theme.colors.bluewhite};
+  
+    ${breakpoints.medium(`
+        padding: 0 ${theme.grid.layout.right.small} 0 ${theme.grid.layout.left.small};
+    `)}
+  
   `};
 `;
 

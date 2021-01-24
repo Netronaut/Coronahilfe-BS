@@ -1,5 +1,5 @@
 import React from 'react';
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 import { Telephone } from '../Icons';
 import { Splash } from '../Typography';
 import { breakpoints } from './theme';

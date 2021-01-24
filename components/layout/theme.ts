@@ -77,12 +77,12 @@ export const theme = {
 };
 
 export const breakpoints = {
-  large: (innerCSS: string): string => `
+  large: (innerCSS: string | FlattenSimpleInterpolation): string => `
     @media screen and (min-width: 1440px) {
       ${innerCSS}
     }
   `,
-  medium: (innerCSS: string): string => `
+  medium: (innerCSS: string | FlattenSimpleInterpolation): string => `
     @media screen and (min-width: 1024px) {
       ${innerCSS}
     }
