@@ -23,7 +23,6 @@
         "next": "^9.5.5",
         "react": "16.13.1",
         "react-dom": "16.13.1",
-        "react-markdown": "^4.3.1",
         "styled-components": "^5.2.0"
     },
     "devDependencies": {
@@ -37,6 +36,7 @@
         "@storybook/preset-typescript": "^3.0.0",
         "@storybook/react": "^6.0.27",
         "@types/classnames": "^2.2.10",
+        "@types/marked": "^1.2.2",
         "@types/node": "^13.13.28",
         "@types/react": "^16.9.53",
         "@types/styled-components": "^5.1.4",
@@ -50,6 +50,7 @@
         "eslint-plugin-prettier": "^3.1.4",
         "eslint-plugin-react": "^7.21.5",
         "husky": "^4.3.0",
+        "marked": "^1.2.8",
         "prettier": "^1.19.1",
         "react-docgen-typescript-loader": "^3.7.2",
         "typescript": "^3.9.7"

@@ -21,6 +21,7 @@ const Container = styled.div`
     ${breakpoints.small(`
       justify-content: space-between;
       padding: 0 ${theme.grid.layout.right.small} 0 ${theme.grid.layout.left.small};
+      overflow: unset;
     `)}
   
   `};

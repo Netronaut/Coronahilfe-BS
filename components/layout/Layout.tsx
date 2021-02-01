@@ -12,6 +12,7 @@ import { Footer } from './Footer';
 import { SectionBreak } from '../SectionBreak';
 import { FooterBanner } from './FooterBanner';
 import Link from 'next/link';
+import { LogoGrid } from './LogoGrid';
 
 export const Layout: React.FC = ({ children }) => (
   <>
@@ -44,22 +45,20 @@ export const Layout: React.FC = ({ children }) => (
       <Row indent="large">
         <Secondary>Partner &amp; Unterstützer</Secondary>
       </Row>
-      <Row indent="large" center>
-        <a href="https://www.tu-braunschweig.de/">
+      <LogoGrid>
+        <a href="https://www.tu-braunschweig.de/" target="_blank" rel="noreferrer">
           <TUBS />
         </a>
-        <a href="https://www.sandkasten.tu-braunschweig.de/">
+        <a href="https://www.sandkasten.tu-braunschweig.de/" target="_blank" rel="noreferrer">
           <Sandkasten />
         </a>
-      </Row>
-      <Row indent="large" center>
-        <a href="https://braunschweig.rotary.de/">
+        <a href="https://braunschweig.rotary.de/" target="_blank" rel="noreferrer">
           <Rotary />
         </a>
-        <a href="https://netronaut.de/">
+        <a href="https://netronaut.de/" target="_blank" rel="noreferrer">
           <Netronaut />
         </a>
-      </Row>
+      </LogoGrid>
       <FooterBanner />
     </Footer>
   </>
