@@ -1,5 +1,5 @@
 import React from 'react';
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 import Link from 'next/link';
 import { Navigation as NavigationFont, NavigationSmall } from '../../Typography';
 import { TUBS, Sandkasten as SandkastenLogo } from '../../Icons';
@@ -9,7 +9,7 @@ import { breakpoints } from '../theme';
 const Container = styled.div`
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   white-space: nowrap;
   overflow: auto;
 
@@ -19,7 +19,8 @@ const Container = styled.div`
     background-color: ${theme.colors.bluewhite};
   
     ${breakpoints.small(`
-        padding: 0 ${theme.grid.layout.right.small} 0 ${theme.grid.layout.left.small};
+      justify-content: space-between;
+      padding: 0 ${theme.grid.layout.right.small} 0 ${theme.grid.layout.left.small};
     `)}
   
   `};
@@ -36,6 +37,8 @@ const MainNav = styled(NavigationFont)`
       content: '';
     }
   }
+
+  max-width: 100%;
 `;
 
 const PartnerLogos = styled.div`

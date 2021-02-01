@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { breakpoints } from './theme';
 
 export const FooterBanner = styled.div`
   height: 380px;
@@ -6,5 +7,9 @@ export const FooterBanner = styled.div`
   background-image: url(/footer-call-badge.png);
   background-position: bottom right;
   background-repeat: no-repeat;
-  background-size: 923px;
+  background-size: 100%;
+
+  ${breakpoints.small(`
+    background-size: 923px;
+  `)}
 `;
